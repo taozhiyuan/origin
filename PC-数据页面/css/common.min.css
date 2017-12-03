@@ -1,0 +1,479 @@
+@charset "UTF-8";
+  html,body{overflow: hidden; width: 100%; height: 100%;}
+  body{color:#666;margin: 0; padding: 0; font-size: 12px; font-family: "Microsoft YaHei","arial","sans-serif"; background-color: #f2f4f8;}
+  p,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,select,textarea,blockquote{padding:0;margin:0;}
+  ul,li,ol{list-style-type:none; outline: none;}
+  table{border-collapse: collapse; border-spacing: 0;}
+  img{border:0;}
+  a{color:#00a0ff; text-decoration:none; outline: none;}
+  input,select,textarea,button{outline: none;}
+  textarea,fieldset,form{border: 0; margin: 0; padding: 0;}
+  
+
+  .report-tab{
+    border-bottom: 1px solid #ccc;
+    height: 35px;
+    line-height: 35px;
+    position: relative;
+    margin: 8px 10px 0;
+    background: #fff;
+    border-radius: 3px 5px 0 0;
+    background-color: white;
+  }
+  .report-tab > ul{
+    display: flex;
+    display: -webkit-flex;
+  }
+      .report-tab > ul > li{
+        flex: 1;
+        -webkit-flex: 1;
+        padding: 0 18px;
+        min-width: 40px;
+        cursor: pointer;
+        text-align: center;
+        float: left;
+        font-size: 14px;
+        color: #666;
+        border-bottom: 2px solid #fff;
+        height: 33px;
+        position: relative;
+      }
+      .report-tab > ul > li.active{
+        border-bottom: 2px solid #59a7f9;
+        line-height: 35px;
+        height: 33px;
+        font-weight: bold;
+        color: #00a0ff;
+        margin-top: 1px;
+      }
+
+
+.report-nav{
+    height: 32px;
+    margin: 8px 10px;
+    color: #666;
+}
+    .nav-more{
+       /* width: 200px;*/
+        height: 100%;
+        background-color: white;
+        border-radius: 25px;
+        float: left;
+        margin-right: 15px;
+        font-size: 0;
+        position: relative;
+    }
+          div.portrait{
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            margin: 4px 2px 4px 15px;
+            text-align: center;
+            vertical-align: text-bottom;
+            overflow: hidden;
+            border-radius: 50%;
+          }
+          .portrait > img{
+            width: 100%;
+            border-radius: 50%;
+          }
+              .portrait > img.multiple{
+                width: 10px;
+                height: 10px;
+                border-radius: 0;
+                margin: 1px;
+              }
+
+          svg#index-svg{
+            position: absolute;
+            width: 0rem;
+            height: 0rem;
+            overflow: hidden;
+            display: none;
+          }
+                .portrait svg{
+                    width: 90%;
+                    height: 90%;
+                }
+
+
+        .nav-content{
+          float: right;
+          height: 100%;
+          cursor: pointer;
+        }
+              .shejibu{
+                height: 100%;
+                text-align: center;
+                font-size: 12px;
+                display: inline-block;
+                vertical-align: text-bottom;
+              }
+                    .shejibu span{
+                        border-right: 1px solid #ccc;
+                        padding: 0 10px;
+                        max-width: 110px;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: normal;
+                        word-break: keep-all;
+                        line-height: 15px;
+                        margin-top: 8px;
+                        display: inline-block;
+                    }
+
+              .see-more{
+                display: inline-block;
+                font-size: 12px;
+                vertical-align: text-bottom;
+                margin-top: 7px;
+    /*            width: 60px;*/
+                text-align: center;
+                padding: 0 7px;
+              }
+              .nav-more i{
+                width: 20px;
+                height: 20px;
+                display: block;
+                float: right;
+                font-size: 14px;
+                transform: rotate(90deg);
+                text-align: center;
+                line-height: 20px;
+                margin-right: 10px;
+                margin-top: 7px;
+              }
+
+
+/*日期插件*/
+/*
+    .date-plug{
+        position: absolute;
+        top: 37px;
+        left: -30px;
+        width: 365px;
+        height: 323px;
+        box-shadow: 0px 0px 8px #ccc;
+        background: white;
+    }
+		div.date-content{
+			height: 100%; 
+			padding: 10px; 
+			box-sizing: border-box;
+		}
+        .date-nav{
+            display: flex;
+			display: -webkit-flex;
+            height: 45px;
+            font-size: 14px;
+            border-bottom: 1px solid #ccc;
+            justify-content: space-between;
+        }
+            .date-nav li{
+				flex: 1;
+				-webkit-flex: 1;
+                color: #999999;
+                line-height: 45px;
+                text-align: center;
+                width: 50px;
+                height: 44px;
+                margin-bottom: 2px;
+                cursor: pointer;
+            }
+            .date-nav li.current{
+                border-bottom: 2px solid #00a0ff;
+                color: #666;
+            }
+
+
+		div.contentBox{
+			height: 247px;
+			overflow: hidden;
+		}
+				ul.head-menu{
+					position: relative;
+					left: 0%;
+					height: 100%;
+					transition: all 0.5s ease;
+					-webkit-transition: all 0.5s ease;
+					
+				}
+					ul.head-menu > li{
+						width: 25%;
+						height: 100%;
+						float: left;
+					}
+*/
+
+		/*年*/
+/*
+            table.date-con-year{
+                width: 100%;
+                height: 212px;
+                font-size: 14px;
+            }
+                table.date-con-year td{
+                    height: 40px;
+                    vertical-align: middle;
+                    text-align: center;
+                    color: #999999;
+                    border-top: 10px solid white;
+                    border-bottom: 10px solid white;
+                    cursor: pointer;
+                }
+                table.date-con-year td.active{
+                    background-color: #f4f4f4;
+                }
+*/
+
+		/*月*/
+/*
+            table.date-con-month{
+                width: 100%;
+                height: 212px;
+                font-size: 14px;
+            }
+                table.date-con-month td{
+                    height: 40px;
+                    vertical-align: middle;
+                    text-align: center;
+                    color: #999999;
+                    border-top: 10px solid white;
+                    border-bottom: 10px solid white;
+                    cursor: pointer;
+                }
+                table.date-con-month td.active{
+                    background-color: #f4f4f4;
+                }
+*/
+
+		/*周*/
+/*
+            table.date-con-week{
+                width: 100%;
+                height: 212px;
+                font-size: 14px;
+            }
+				table.date-con-week tr.back {
+                    background-color: #f4f4f4;
+                }
+                table.date-con-week th{
+					 color: #666;
+                    font-weight: normal;
+					height: 25px;
+                    vertical-align: middle;
+                    text-align: center;
+                    cursor: pointer;
+                    font-size: 14px;
+                }
+                table.date-con-week td{
+                    height: 25px;
+                    vertical-align: middle;
+                    text-align: center;
+                    color: #ccc;
+                    cursor: pointer;
+                    font-size: 12px;
+                }
+                table.date-con-week td span{
+                    display: block;
+                    height: 25px;
+                    border-radius: 5px;
+                    line-height: 25px;
+					width: 25px;
+					margin: 0 auto;
+                }
+*/
+
+		/*日*/
+/*
+            table.date-con-days{
+                width: 100%;
+                height: 212px;
+                font-size: 14px;
+            }
+				table.date-con-days td.active {
+                    background-color: #f4f4f4;
+                }
+                table.date-con-days th{
+					 color: #666;
+                    font-weight: normal;
+					height: 25px;
+                    vertical-align: middle;
+                    text-align: center;
+                    cursor: pointer;
+                    font-size: 14px;
+                }
+                table.date-con-days td{
+                    height: 25px;
+                    vertical-align: middle;
+                    text-align: center;
+                    color: #ccc;
+                    cursor: pointer;
+                    font-size: 12px;
+                }
+                table.date-con-days td span{
+                    display: block;
+                    height: 25px;
+                    border-radius: 5px;
+                    line-height: 25px;
+					width: 25px;
+					margin: 0 auto;
+                }
+*/
+
+
+	/*子导航*/
+/*
+	ul.head-subnav{
+		display: flex;
+		display: -webkit-flex;
+		margin-top: 5px;
+	}
+		ul.head-subnav li{
+			flex: 1;
+			-webkit-flex: 1;
+		}
+			ul.date-subnav{
+				height: 35px;
+				display: flex;
+				display: -webkit-flex;
+				font-size: 14px;
+				justify-content: center;
+			}
+				.date-subnav li{
+					-webkit-flex: 1;
+					line-height: 35px;
+					color: #999999;
+					cursor: pointer;
+					text-align: center;
+				}
+*/
+/*日期插件 －结束*/
+
+/*人员插件*/
+    .personnel-plug{
+        position: absolute;
+        top: 37px;
+        left: 0px;
+        width: 335px;
+        height: 250px;
+        box-shadow: 0px 0px 8px #ccc;
+        background: white;
+        padding: 10px;
+    }
+        .personnel-nav{
+            display: flex;
+            height: 45px;
+            font-size: 14px;
+            border-bottom: 1px solid #ccc;
+            justify-content: space-between;
+        }
+            .personnel-nav li{
+                /*flex: 1;*/
+                line-height: 45px;
+                text-align: center;
+                width: 70px;
+                height: 44px;
+                margin-bottom: 2px;
+                color: #999;
+            }
+            .personnel-nav li.current{
+                border-bottom: 2px solid #00a0ff;
+                color: #666;
+            }
+        .function{
+            height: 30px;
+            background: red;
+        }
+/*人员插件 －结束*/
+
+
+
+
+    .nav-date{
+        float: left;
+        width: 100px;
+        height: 100%;
+        background-color: white;
+        border-radius: 25px;
+    }
+    .nav-query{
+      color: #666;
+      line-height: 32px;
+      float: right;
+      cursor: pointer;
+    }
+
+
+.ranking-list{
+    height: 35px;
+    margin: 0 10px;
+    font-size: 14px;
+    line-height: 35px;
+}
+.column-form{
+    margin: 8px 10px;
+    display: flex;
+    display: -webkit-flex;
+}
+    .column-form > div{
+        flex: 1;
+        -webkit-flex: 1;
+        background: red;
+        margin-right: 10px;
+        background-color: #fff;
+    }
+    .column-form > div.form-height{
+        height: 270px;
+    }
+    .column-form > div:last-child{
+          margin: 0;
+        }
+        .sideBar{
+            background-color: white;
+        }
+            .sideBar li{
+                height: 40px;
+                border-bottom: 1px solid #e6e6e6;
+            }
+            .sideBar li:first-child{
+                height: 50px;
+                line-height: 50px;
+                text-align: center;
+            }
+
+
+
+.ranking-item>li{height: 40px;border-bottom: 0.6px solid #efefef;padding-left: 10px;}
+.ranking-item>li:first-child{height: 50px;line-height: 50px;text-align: center;font-size: 15px;}
+.ranking-item>li>div{height: 100%;line-height: 40px;text-align: center;}
+.ranking-ranking{width: 40px;float: left;}
+.ranking-ranking>span{display: inline-block;width: 18px;height: 18px;border-radius: 50%;background: #bbbbbb;line-height: 18px;color: #fff;}
+.ranking-portrait{width: 40px;float: left;}
+.ranking-portrait>div{float: left;width: 25px;height: 25px;border-radius: 50%;margin: 8px 0;background: #939395;}
+.ranking-ranking-name{float: left;overflow: hidden; max-width: 170px; color: #1d1d25;font-size: 14px;}
+.ranking-state{width: 30px;float: right;color: #939395;}
+.ranking-index{float: right;width: 50px;color: #4a4a4a;}
+.ranking-item>li:nth-child(1)>div.ranking-ranking span{background: #f36e13;}
+.ranking-item>li:nth-child(2)>div.ranking-ranking span{background: #fcab52;}
+.ranking-item>li:nth-child(3)>div.ranking-ranking span{background: #ffcf59;}
+.ranking-item>li:nth-child(1)>div.ranking-index{color: #f36e13;}
+.ranking-item>li:nth-child(2)>div.ranking-index{color: #fcab52;}
+.ranking-item>li:nth-child(3)>div.ranking-index{color: #ffcf59;}
+.icon-zhizheng-top{color: #f36e13;}
+.icon-zhizheng-top-b{transform: rotate(180deg);color: #78b2fc;}
+.icon-jiantou-b::after{color: #cbcbcb;font-size: 14px;}
+.icon-touxiang img{border-radius: 50%;vertical-align: text-bottom;width: 100%;}
+
+
+
+
+
+
+
+
+
+
+
+
+

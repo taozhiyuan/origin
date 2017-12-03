@@ -1,0 +1,71 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?58bihh');
+  src:  url('fonts/icomoon.eot?58bihh#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?58bihh') format('truetype'),
+    url('fonts/icomoon.woff?58bihh') format('woff'),
+    url('fonts/icomoon.svg?58bihh#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-zhizheng-top:after {
+  content: "\e907";
+}
+.icon-cha:after {
+  content: "\e901";
+}
+.icon-gou:after {
+  content: "\e902";
+}
+.icon-jiantou-left:after {
+  content: "\e900";
+}
+.icon-jiantou:after {
+  content: "\e903";
+}
+.icon-menu:after {
+  content: "\e904";
+}
+.icon-pc:after {
+  content: "\e905";
+}
+.icon-play:after {
+  content: "\e906";
+}
+
+
+
+.icon-jiantou-b:after {
+  content: "\e903";
+}
+.icon-zhizheng-top-b:after {
+  content: "\e907";
+}
+
+
+
+
+
+
+
+
+
+
+
+

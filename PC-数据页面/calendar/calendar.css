@@ -1,0 +1,203 @@
+@charset "UTF-8";
+
+/*日期插件*/
+    .date-plug{
+		position: absolute;
+		top: 37px;
+		left: -30px;
+		width: 365px;
+		height: 323px;
+		box-shadow: 0px 0px 8px #ccc;
+		background: white;
+		z-index: 9;
+
+    }
+		div.date-content{
+			position: absolute;
+			background: white;
+			z-index: 9;
+			bottom: 0;
+			left: 0;
+			height: 323px;
+			padding: 10px; 
+			box-sizing: border-box;
+			transition: all 0.3s ease;
+			-webkit-transition: all 0.3s ease;
+		}
+        .date-nav{
+            display: flex;
+			display: -webkit-flex;
+            height: 45px;
+            font-size: 14px;
+            border-bottom: 1px solid #ccc;
+            justify-content: space-between;
+        }
+            .date-nav li{
+				flex: 1;
+				-webkit-flex: 1;
+                color: #999999;
+                line-height: 45px;
+                text-align: center;
+                width: 50px;
+                height: 44px;
+                margin-bottom: 2px;
+                cursor: pointer;
+            }
+            .date-nav li.current{
+                border-bottom: 2px solid #00a0ff;
+                color: #666;
+            }
+
+
+		div.calendar-contentBox{
+			height: 247px;
+			overflow: hidden;
+		}
+				ul.calendar-head-menu{
+					position: relative;
+					left: 0%;
+					height: 100%;
+					transition: all 0.5s ease;
+					-webkit-transition: all 0.5s ease;
+					
+				}
+					ul.calendar-head-menu > li{
+						width: 25%;
+						height: 100%;
+						float: left;
+					}
+
+		/*年*/
+            table.date-con-year{
+                width: 100%;
+                height: 212px;
+                font-size: 14px;
+            }
+                table.date-con-year td{
+                    height: 40px;
+                    vertical-align: middle;
+                    text-align: center;
+                    color: #999999;
+                    border-top: 10px solid white;
+                    border-bottom: 10px solid white;
+                    cursor: pointer;
+                }
+                table.date-con-year td.active{
+                    background-color: #f4f4f4;
+                }
+
+		/*月*/
+            table.date-con-month{
+                width: 100%;
+                height: 212px;
+                font-size: 14px;
+            }
+                table.date-con-month td{
+                    height: 40px;
+                    vertical-align: middle;
+                    text-align: center;
+                    color: #999999;
+                    border-top: 10px solid white;
+                    border-bottom: 10px solid white;
+                    cursor: pointer;
+                }
+                table.date-con-month td.active{
+                    background-color: #f4f4f4;
+                }
+
+		/*周*/
+            table.date-con-week{
+                width: 100%;
+                height: 212px;
+                font-size: 14px;
+            }
+				table.date-con-week tr.back {
+                    background-color: #f4f4f4;
+                }
+                table.date-con-week th{
+					 color: #666;
+                    font-weight: normal;
+					height: 25px;
+                    vertical-align: middle;
+                    text-align: center;
+                    cursor: pointer;
+                    font-size: 14px;
+                }
+                table.date-con-week td{
+                    height: 25px;
+                    vertical-align: middle;
+                    text-align: center;
+                    color: #ccc;
+                    cursor: pointer;
+                    font-size: 12px;
+                }
+                table.date-con-week td span{
+                    display: block;
+                    height: 25px;
+                    border-radius: 5px;
+                    line-height: 25px;
+					width: 25px;
+					margin: 0 auto;
+                }
+
+		/*日*/
+            table.date-con-days{
+                width: 100%;
+                height: 212px;
+                font-size: 14px;
+            }
+				table.date-con-days td.active span{
+                    background-color: #f4f4f4;
+                }
+                table.date-con-days th{
+					 color: #666;
+                    font-weight: normal;
+					height: 25px;
+                    vertical-align: middle;
+                    text-align: center;
+                    cursor: pointer;
+                    font-size: 14px;
+                }
+                table.date-con-days td{
+                    height: 25px;
+                    vertical-align: middle;
+                    text-align: center;
+                    color: #ccc;
+                    cursor: pointer;
+                    font-size: 12px;
+                }
+                table.date-con-days td span{
+                    display: block;
+                    height: 25px;
+                    border-radius: 5px;
+                    line-height: 25px;
+					width: 25px;
+					margin: 0 auto;
+                }
+
+
+	/*子导航*/
+	ul.calendar-head-subnav{
+		display: flex;
+		display: -webkit-flex;
+		margin-top: 5px;
+	}
+		ul.calendar-head-subnav li{
+			flex: 1;
+			-webkit-flex: 1;
+		}
+			ul.date-subnav{
+				height: 35px;
+				display: flex;
+				display: -webkit-flex;
+				font-size: 14px;
+				justify-content: center;
+			}
+				.date-subnav li{
+					-webkit-flex: 1;
+					line-height: 35px;
+					color: #999999;
+					cursor: pointer;
+					text-align: center;
+				}
+/*日期插件 －结束*/

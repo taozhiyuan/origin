@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>哨子办公</title>
+    <link rel="stylesheet" href="css/common.min.css">
+    <link rel="stylesheet" href="fonts/style.css">
+</head>
+<body>
+	<svg id="index-svg">
+        <symbol id="calendar" viewBox="0 0 200 200">
+            <defs><style>.cls-1{fill:#00a0ff;}</style></defs>
+            <path class="cls-1" d="M47.46,179.91c-16.83,0-32.17-14.64-32.17-30.71v-88c0-16.3,14.25-30.07,31.12-30.07a4.92,4.92,0,0,1,0,9.84c-11.53,0-21.28,9.27-21.28,20.24v88c0,10.73,10.85,20.87,22.33,20.87h113.2c10.34,0,18.14-9,18.14-20.87v-88c0-11.35-8.66-20.24-19.72-20.24a4.92,4.92,0,1,1,0-9.84c16.57,0,29.56,13.21,29.56,30.07v88c0,17.51-12,30.71-28,30.71H47.46Z"/><path class="cls-1" d="M52.91,90a4.92,4.92,0,0,1,0-9.84H65.18a4.92,4.92,0,0,1,0,9.84Z"/><path class="cls-1" d="M93.79,90a4.92,4.92,0,0,1,0-9.84h12.26a4.92,4.92,0,1,1,0,9.84Z"/><path class="cls-1" d="M138.76,90a4.92,4.92,0,0,1,0-9.84H151A4.92,4.92,0,1,1,151,90Z"/><path class="cls-1" d="M52.91,114.5a4.92,4.92,0,0,1,0-9.84H65.18a4.92,4.92,0,0,1,0,9.84Z"/><path class="cls-1" d="M93.79,114.5a4.92,4.92,0,0,1,0-9.84h12.26a4.92,4.92,0,0,1,0,9.84Z"/><path class="cls-1" d="M138.76,114.5a4.92,4.92,0,0,1,0-9.84H151a4.92,4.92,0,1,1,0,9.84Z"/><path class="cls-1" d="M52.91,139a4.92,4.92,0,0,1,0-9.84H65.18a4.92,4.92,0,0,1,0,9.84Z"/><path class="cls-1" d="M93.79,139a4.92,4.92,0,0,1,0-9.84h12.26a4.92,4.92,0,0,1,0,9.84Z"/><path class="cls-1" d="M138.76,139a4.92,4.92,0,0,1,0-9.84H151a4.92,4.92,0,1,1,0,9.84Z"/><path class="cls-1" d="M44.74,40.92a4.92,4.92,0,1,1,0-9.84H155.11a4.92,4.92,0,1,1,0,9.84Z"/><path class="cls-1" d="M65.18,53.18a4.92,4.92,0,0,1-4.92-4.92V23.74a4.92,4.92,0,0,1,9.84,0V48.27A4.92,4.92,0,0,1,65.18,53.18Z"/><path class="cls-1" d="M138.76,53.18a4.92,4.92,0,0,1-4.92-4.92V23.74a4.92,4.92,0,0,1,9.84,0V48.27A4.92,4.92,0,0,1,138.76,53.18Z"/>
+        </symbol>
+    </svg>
+    <div class="report-tab" id="nnd">
+        <ul>
+            <li class="active">
+                <span class="title">基础数据</span>
+            </li>
+            <li>
+              <span class="title">考勤数据</span>
+            </li>
+            <li>
+              <span class="title">汇报数据</span>
+            </li>
+            <li>
+              <span class="title">任务数据</span>
+            </li>
+            <li>
+              <span class="title">审批数据</span>
+            </li>
+            <li>
+              <span class="title">消息数据</span>
+            </li>
+        </ul>
+    </div>
+    <div class="report-nav">
+        <div class="nav-more">
+            <div class="portrait">
+                <img src="http://img3.imgtn.bdimg.com/it/u=4258298700,3921831243&fm=214&gp=0.jpg" alt="">
+            </div>
+            <div class="shejibu"><span>设计部</span></div>
+            <div class="nav-content">
+                <span class="see-more">查看更多</span>
+                 <i class="icon-jiantou"></i> 
+            </div>
+            <div class="personnel-plug" style="display: none;">
+            	<ul class="personnel-nav">
+            		<li class="current">人员</li>
+            		<li>部门</li>
+            		<li>公司</li>
+            	</ul>
+            	<div class="function">
+            		<div class="function-txt">共7人，请选择</div>
+            		<div class="function-search">
+            			<input type="text" >
+            		</div>
+            	</div>
+            </div>
+        </div>
+        <div class="nav-more" id="nav-more">
+            <div class="portrait">
+                <svg><use xlink:href="#calendar"/></svg>
+            </div>
+            <div class="nav-content">
+                <span class="see-more">2013年</span>
+                <i class="icon-jiantou"></i> 
+            </div>
+            <div class="date-plug" style="display: none;">
+            	<ul class="date-nav">
+            		<li class="current">日</li>
+            		<li>周</li>
+            		<li>月</li>
+            		<li>年</li>
+            	</ul>
+            	<ul class="date-subnav">
+            		<li class="icon-jiantou-left"></li>
+            		<li>2017年7月</li>
+            		<li class="icon-jiantou"></li>
+            	</ul>
+            </div>
+        </div>
+        <div class="nav-query">高级查询</div>
+    </div>
+    <div class="column-form">
+    	<div class="form-height"></div>
+    </div>
+    <div class="column-form">
+    	<div class="form-height"></div>
+    </div>
+  <script>
+    function con(x){return console.info(x);}
+    function $(x){return document.getElementById(x);}
+    function $A(x){return document.querySelectorAll(x);}
+    var myFunction = (function(){
+        var reportTab_li = $A(".report-tab li");
+
+        var miangDui = {
+            china : function(){
+                for(var i =0; i<reportTab_li.length; i++){
+                    reportTab_li[i].onclick = function(){
+                        for(j = 0; j<reportTab_li.length; j++){
+                            reportTab_li[j].classList.remove("active");
+                        }
+                          this.classList.add("active");
+                    }
+                }
+            }()
+        }
+    })()
+  </script>
+</body>
+</html>
+
+

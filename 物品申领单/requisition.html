@@ -1,0 +1,172 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="requisition.css">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<div class="print-toolbar">
+		<a href="#" class="print-bt"><i class="icon-print"></i>打印</a>
+	</div>
+	<div class="print-title mouseover">
+		物品申领单<span> (团队)</span>
+		<div class="form-state">审批中</div>
+		<aside class="print-border"><a href="##" class="icon-chacha"></a></aside>
+	</div>
+	<div class="frame">
+		<div class="print-type mouseover">
+			物品申领单
+			<aside class="print-border"><a href="##" class="icon-chacha"></a></aside>
+		</div>
+		<div class="print-list mouseover">
+			<div><span>提交人: <i class="icon-touxiang"></i></span>李俊亮</div>
+			<div><span>部门: </span>我的团队</div>
+			<div><span>日期: </span>2017-6-30</div>
+			<aside class="print-border"><a href="##" class="icon-chacha"></a></aside>
+		</div>
+	</div>
+	<div class="frame">
+		<div class="print-purpose mouseover">
+			<div>用途</div>
+			<div>一般办公使用</div>
+			<aside class="print-border"><a href="##" class="icon-chacha"></a></aside>
+		</div>
+		<div class="print-detailed mouseover">
+			<div class="print-detailed-title">
+				明细子表
+				<a href="##" class="icon-open"></a>
+				<a href="##" class="icon-chuizi"></a>
+			</div>
+			<div class="print-detailed-spread" style="height: 0px">
+				<div class="spread-title"><span>明细子表</span></div>
+				<ul class="item-name">
+					<li>物品名称<i>*</i></li>
+					<li>1</li>
+				</ul>
+				<ul class="item-name">
+					<li>单位<i>*</i></li>
+					<li>1</li>
+				</ul>
+				<ul class="item-name">
+					<li>数量<i>*</i></li>
+					<li>1</li>
+				</ul>
+				<ul class="item-name">
+					<li>备注</li>
+					<li></li>
+				</ul>
+			</div>
+			<div class="print-detailed-con">
+				<table class="form-detailed">
+					<tr>
+						<th class="itemNameA">物品名称<span>*</span></th>
+						<th class="itemNameA">单位<span>*</span></th>
+						<th class="itemNameA">数量<span>*</span></th>
+						<th class="itemNameA">备注</th>
+					</tr>
+					<tr>
+						<td class="itemNameB">1</td>
+						<td class="itemNameB">1</td>
+						<td class="itemNameB">1</td>
+						<td class="itemNameB"></td>
+					</tr>
+					<tr>
+						<td class="itemNameC"></td>
+						<td class="itemNameC"></td>
+						<td class="itemNameC">合计：1</td>
+						<td class="itemNameC"></td>
+					</tr>
+				</table>
+			</div>
+			<aside class="print-border"><a href="##" class="icon-chacha"></a></aside>
+		</div>
+		
+		<div class="print-input">
+			<div>文本输入框</div>
+			<div>多行文本框</div>
+			<div>下拉菜单</div>
+		</div>
+		<div class="information mouseover">
+			<div>评分</div>
+			<div>
+				<i class="icon-wujiaoxin"></i>
+				<i class="icon-wujiaoxin"></i>
+				<i class="icon-wujiaoxin"></i>
+				<i class="icon-wujiaoxin"></i>
+				<i class="icon-wujiaoxin"></i>
+			</div>
+			<aside class="print-border"><a href="##" class="icon-chacha"></a></aside>
+		</div>
+		<div class="information mouseover">
+			<div>图片</div>
+			<div></div>
+			<aside class="print-border"><a href="##" class="icon-chacha"></a></aside>
+		</div>
+		<div class="information mouseover">
+			<div>邮箱</div>
+			<div></div>
+			<aside class="print-border"><a href="##" class="icon-chacha"></a></aside>
+		</div>
+		<div class="information mouseover">
+			<div>手机</div>
+			<div></div>
+			<aside class="print-border"><a href="##" class="icon-chacha"></a></aside>
+		</div>
+	</div>
+	<div class="popup-back">
+		<div class="popup">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+					<h4 class="modal-title">设置列</h4>
+				</div>
+							<div class="modal-body">
+				<p class="wform-tip pv-10 mb-15">
+					下方字段为当前明细表字段，勾选需要隐藏的字段。
+				</p>
+				<ul id="columnFileds" class="wform-column-list">
+					<li class="checkbox">
+						<label>
+							<span class="j_sort sn"></span>
+							<input class="j_column" type="checkbox" name="column">
+							<span class="j_filedName">物品名称</span>
+							<span class="tip j_bewrite"></span>
+						</label>
+					</li>
+					<li class="checkbox">
+						<label>
+							<span class="j_sort sn"></span>
+							<input class="j_column" type="checkbox" name="column">
+							<span class="j_filedName">单位</span>
+							<span class="tip j_bewrite"></span>
+						</label>
+					</li>
+					<li class="checkbox">
+						<label>
+							<span class="j_sort sn"></span>
+							<input class="j_column" type="checkbox" name="column">
+							<span class="j_filedName">数量</span>
+							<span class="tip j_bewrite"></span>
+						</label>
+					</li>
+					<li class="checkbox">
+						<label>
+							<span class="j_sort sn"></span>
+							<input class="j_column" type="checkbox" name="column">
+							<span class="j_filedName">备注</span>
+							<span class="tip j_bewrite"></span>
+						</label>
+					</li>
+				</ul>
+			</div>
+			<div class="modal-footer">
+				<a id="saveColumn" class="btn btn-sm btn-primary fr mr-10" data-dismiss="modal" aria-hidden="true">确定</a>
+			</div>
+			</div>
+		</div>
+	</div>
+	<script src="requisition.js"></script>
+</body>
+</html>

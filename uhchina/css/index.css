@@ -1,0 +1,272 @@
+@charset "UTF-8";
+
+@media screen and (max-width: 736px){
+	html{
+		font-size: 625%;
+	}
+}
+
+@media screen and (min-width: 737px){
+	html{
+		font-size: 1000%;
+	}
+}
+html{
+	font-family: "Helvetica";
+}
+
+::-webkit-scrollbar {
+	display: none;
+}
+
+*{
+	outline: 0;
+	padding: 0;
+	margin: 0;
+	border: none;
+}
+
+body{
+	min-width: 3.2rem;
+	font-size: 0.14rem;
+	background: #f2f2f2;
+}
+
+a{
+	text-decoration: none;
+	color: #aaa;
+}
+img{
+	width: 100%;
+}
+
+ul,ol{
+	list-style: none outside none;
+}
+
+
+
+
+svg#index-svg{
+	position: absolute;
+	width: 0rem;
+	height: 0rem;
+	overflow: hidden;
+	display: none;
+}
+
+div.logo{
+	height: 0.4rem;
+	border-bottom: 2px solid #f2f2f2;
+	padding-top: 0.2rem;
+	text-align: center;
+	background: #fff;
+}
+		div.logo a{
+			display: inline-block;
+			height: 0.3rem;
+			width: 1.21rem;
+		/*	margin: 0 auto;*/
+		}
+
+
+
+ul.menuBox{
+	height: 0.35rem;
+	text-align: center;
+	background: #fff;
+}
+		ul.menuBox li{
+			display: inline-block;
+			height: 100%;
+			width: 1rem;
+			line-height: 0.35rem;
+			position: relative;
+			font-size: 0.16rem;
+			color: #aaa;
+		}
+		ul.menuBox li.liactive{
+			color: #555;	
+		}
+			ul.menuBox li.liactive:after{
+				display: block;
+				content: "";
+				position: absolute;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				height: 2px;
+				background-color: #29abe2;
+			}
+
+
+
+
+div.contentBox{
+	height: 2.7rem;
+	overflow: hidden;
+	position: relative;
+}
+		ul.head-menu{
+			display: flex;
+			height: 2.7rem;
+			width: 200%;
+			position: absolute;
+			left: 0;
+			top: 0;
+			transition: all 0.5s ease;
+		}
+				ul.head-menu>li{
+					flex-grow: 1;
+					flex-shrink: 1;
+					flex-basis: 0%;
+					height: 100%;
+				}
+				ul.nav{
+					width: 92%;
+					padding-left: 4%;
+					padding-right: 4%;
+					height: 2.7rem;
+					background: #f2f2f2;
+				}
+						ul.nav>li{
+							width: 25%;
+							height: 1.2rem;
+							float: left;
+							text-align: center;
+						}
+								ul.nav>li>a{
+									display: inline-block;
+									width: 0.7rem;
+									height: 0.9rem;
+									margin-top: 0.3rem;
+									white-space: normal;
+								}
+								ul.nav>li>a>svg{
+										display: block;
+										margin-bottom: 0.05rem;
+										width: 0.7rem;
+										height: 0.7rem;
+								}
+
+symbol#icon-bifen .cls-1,.cls-3{fill:#fff;}
+symbol#icon-bifen .cls-1{stroke:#e6e6e6;stroke-miterlimit:10;}
+symbol#icon-bifen .cls-1,.cls-3{fill:#fff;}
+symbol#icon-bifen .cls-2{fill:#d667d6;}
+
+symbol#icon-saicheng .cls-1{fill:#fff;stroke:#e6e6e6;stroke-miterlimit:10;}
+symbol#icon-saicheng .cls-2{fill:#ea535e;}
+
+symbol#icon-saishi .cls-1{fill:#fff;stroke:#e6e6e6;stroke-miterlimit:10;}
+symbol#icon-saishi .cls-2{fill:#29abe2;}
+
+symbol#icon-saiguo .cls-1{fill:#fff;stroke:#e6e6e6;stroke-miterlimit:10;}
+symbol#icon-saiguo .cls-2{fill:#8cc63f;}
+
+symbol#icon-luxiang .cls-1{fill:#fff;stroke:#e6e6e6;stroke-miterlimit:10;}
+symbol#icon-luxiang .cls-2{fill:#4d4d4d;}
+symbol#icon-luxiang .cls-3{fill:none;}
+symbol#icon-luxiang .cls-4{fill:#ccc;}
+
+symbol#icon-zhibo .cls-1{fill:#fff;stroke:#e6e6e6;stroke-miterlimit:10;}
+symbol#icon-zhibo .cls-2{fill:#f6bc46;}
+
+symbol#icon-ziliaoku .cls-1{fill:#fff;stroke:#e6e6e6;stroke-miterlimit:10;}
+symbol#icon-ziliaoku .cls-2{fill:#ff008c;}
+
+
+
+section{
+	position: relative;
+}
+section>div.basketball{
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: -1;
+}
+div.match-list{
+	background: #fff;
+	box-shadow: 0px 1px 0px #e6e6e6 inset;
+}
+		div.title{
+			height: 0.35rem;
+			line-height: 0.35rem;
+			border-top: 1px solid #f2f2f2;
+			border-bottom: 2px solid #f2f2f2;
+		}
+				div.title>div.tip{
+					display: inline-block;
+					height: 0.15rem;
+					line-height: 0.15rem;
+					margin-left: 0.1rem;
+					padding-left: 0.05rem;
+					border-left: 3px solid #29abe2;
+					vertical-align: middle;
+				}
+
+				div.title>a.more{
+					margin-right: 0.1rem;
+					float: right;
+				}
+						div.title span.heiti{
+							font-family: "SimHei";
+						}
+
+
+
+ul.list{
+	position: relative;
+	right: -1px;
+	display: inline-block;
+	overflow: hidden;
+	vertical-align: top;
+	width: 100%;
+}
+		ul.list li{
+			width: 33.33%;
+			float: left;
+			height: 0.56rem;
+			box-shadow: -1px -1px 0px #e6e6e6 inset;
+			text-align: center;
+		}
+			ul.list li>a{
+				display: block;
+				vertical-align: middle;
+				height: 100%;
+				color: #555;
+			}
+				ul.list li>a>i.icon{
+					display: inline-block;
+					position: relative;
+					top: 0.12rem;
+					width: 0.32rem;
+					height: 0.32rem;
+/*
+					background-image: url(../imgage/match/zhongchao.png);
+					background-size: contain;
+*/
+				}
+
+
+footer{
+	width: 100%;
+	font-size: 0.12rem;
+	background: #f2f2f2;
+	height: 0.5rem;
+	text-align: center;
+	line-height: 0.5rem;
+	color: #aaa;
+}
+footer>a{
+	display: block;
+	float: right;
+	margin-top: 0.05rem;
+	margin-right: 0.25rem;
+	width: 0.2rem;
+	height: 0.2rem;
+}
+
+
+
+

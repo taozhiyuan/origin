@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>哨子办公</title>
+    <link rel="stylesheet" href="css/common.min.css">
+    <link rel="stylesheet" href="fonts/style.css">
+    <link rel="stylesheet" href="calendar/calendar.css">
+</head>
+<body>
+    <svg id="index-svg">
+        <symbol id="calendar" viewBox="0 0 200 200">
+            <defs><style>.cls-1{fill:#00a0ff;}</style></defs>
+            <path class="cls-1" d="M47.46,179.91c-16.83,0-32.17-14.64-32.17-30.71v-88c0-16.3,14.25-30.07,31.12-30.07a4.92,4.92,0,0,1,0,9.84c-11.53,0-21.28,9.27-21.28,20.24v88c0,10.73,10.85,20.87,22.33,20.87h113.2c10.34,0,18.14-9,18.14-20.87v-88c0-11.35-8.66-20.24-19.72-20.24a4.92,4.92,0,1,1,0-9.84c16.57,0,29.56,13.21,29.56,30.07v88c0,17.51-12,30.71-28,30.71H47.46Z"/><path class="cls-1" d="M52.91,90a4.92,4.92,0,0,1,0-9.84H65.18a4.92,4.92,0,0,1,0,9.84Z"/><path class="cls-1" d="M93.79,90a4.92,4.92,0,0,1,0-9.84h12.26a4.92,4.92,0,1,1,0,9.84Z"/><path class="cls-1" d="M138.76,90a4.92,4.92,0,0,1,0-9.84H151A4.92,4.92,0,1,1,151,90Z"/><path class="cls-1" d="M52.91,114.5a4.92,4.92,0,0,1,0-9.84H65.18a4.92,4.92,0,0,1,0,9.84Z"/><path class="cls-1" d="M93.79,114.5a4.92,4.92,0,0,1,0-9.84h12.26a4.92,4.92,0,0,1,0,9.84Z"/><path class="cls-1" d="M138.76,114.5a4.92,4.92,0,0,1,0-9.84H151a4.92,4.92,0,1,1,0,9.84Z"/><path class="cls-1" d="M52.91,139a4.92,4.92,0,0,1,0-9.84H65.18a4.92,4.92,0,0,1,0,9.84Z"/><path class="cls-1" d="M93.79,139a4.92,4.92,0,0,1,0-9.84h12.26a4.92,4.92,0,0,1,0,9.84Z"/><path class="cls-1" d="M138.76,139a4.92,4.92,0,0,1,0-9.84H151a4.92,4.92,0,1,1,0,9.84Z"/><path class="cls-1" d="M44.74,40.92a4.92,4.92,0,1,1,0-9.84H155.11a4.92,4.92,0,1,1,0,9.84Z"/><path class="cls-1" d="M65.18,53.18a4.92,4.92,0,0,1-4.92-4.92V23.74a4.92,4.92,0,0,1,9.84,0V48.27A4.92,4.92,0,0,1,65.18,53.18Z"/><path class="cls-1" d="M138.76,53.18a4.92,4.92,0,0,1-4.92-4.92V23.74a4.92,4.92,0,0,1,9.84,0V48.27A4.92,4.92,0,0,1,138.76,53.18Z"/>
+        </symbol>
+    </svg>
+    <div class="report-nav">
+        <div class="nav-more">
+            <div class="portrait">
+                <img src="http://img3.imgtn.bdimg.com/it/u=4258298700,3921831243&fm=214&gp=0.jpg" alt="" class="multiple">
+                <img src="http://img3.imgtn.bdimg.com/it/u=4258298700,3921831243&fm=214&gp=0.jpg" alt="" class="multiple">
+                <img src="http://img3.imgtn.bdimg.com/it/u=4258298700,3921831243&fm=214&gp=0.jpg" alt="" class="multiple">
+                <img src="http://img3.imgtn.bdimg.com/it/u=4258298700,3921831243&fm=214&gp=0.jpg" alt="" class="multiple">
+            </div>
+            <div class="shejibu"><span>设计部</span></div>
+            
+            <div class="nav-content">
+                <span class="see-more">查看更多</span>
+                 <i class="icon-jiantou"></i> 
+            </div>
+            <div class="personnel-plug" style="display: none;">
+            	<ul class="personnel-nav">
+            		<li class="current">人员</li>
+            		<li>部门</li>
+            		<li>公司</li>
+            	</ul>
+            	<div class="function">
+            		<div class="function-txt">共7人，请选择</div>
+            		<div class="function-search">
+            			<input type="text" >
+            		</div>
+            	</div>
+            </div>
+        </div>
+        <div class="nav-more date-t" id="nav-more">
+            <div class="portrait">
+                <svg><use xlink:href="#calendar"/></svg>
+            </div>
+            <div class="nav-content date-nnv">
+                <span class="see-more">
+					<span id="date-year">2017</span>年<span id="date-month" class="spot">06</span><span class="spot">月</span><span id="date-days" class="spot">27</span><span class="spot">日</span>
+               		</span>
+               		<span id="date-two">
+						<span id="date-year2">2017</span><i>.</i>
+						<span id="date-month2">06</span><i>.</i>
+						<span id="date-days2">27</span>
+					</span>
+                <i class="icon-jiantou"></i> 
+            </div>
+
+
+
+	<div class="date-plug">
+		<div class="date-content" id="date-plug">
+					<ul class="date-nav">
+						<li class="current">日</li>
+						<li>周</li>
+						<li>月</li>
+						<li>年</li>
+					</ul>
+					<div class="calendar-contentBox">
+						<ul class="calendar-head-menu">
+							<li>
+							   <ul class="calendar-head-subnav">
+									<li>
+										<ul class="date-subnav">
+											<li class="icon-jiantou-left decline-y"></li>
+											<li><span class="j-year">2017</span>年</li>
+											<li class="icon-jiantou increasing-y"></li>
+										</ul>
+									</li>
+									<li>
+										<ul class="date-subnav">
+											<li class="icon-jiantou-left decline"></li>
+											<li><span class="j-month">7</span>月</li>
+											<li class="icon-jiantou increasing"></li>
+										</ul>
+									</li>
+							   </ul>
+
+								<table class="date-con-days">
+									<tr>
+										<th>一</th>
+										<th>二</th>
+										<th>三</th>
+										<th>四</th>
+										<th>五</th>
+										<th>六</th>
+										<th>日</th>
+									</tr>
+									<tr>
+										<td><span></span></td>
+										<td><span></span></td>
+										<td><span></span></td>
+										<td><span></span></td>
+										<td><span></span></td>
+										<td><span></span></td>
+										<td><span></span></td>
+									</tr>
+									<tr>
+										<td><span></span></td>
+										<td><span></span></td>
+										<td><span></span></td>
+										<td><span></span></td>
+										<td><span></span></td>
+										<td><span></span></td>
+										<td><span></span></td>
+									</tr>
+									<tr>
+										<td><span></span></td>
+										<td><span></span></td>
+										<td><span></span></td>
+										<td><span></span></td>
+										<td><span></span></td>
+										<td><span></span></td>
+										<td><span></span></td>
+									</tr>
+									<tr>
+										<td><span></span></td>
+										<td><span></span></td>
+										<td><span></span></td>
+										<td><span></span></td>
+										<td><span></span></td>
+										<td><span></span></td>
+										<td><span></span></td>
+									</tr>
+									<tr>
+										<td><span></span></td>
+										<td><span></span></td>
+										<td><span></span></td>
+										<td><span></span></td>
+										<td><span></span></td>
+										<td><span></span></td>
+										<td><span></span></td>
+									</tr>
+									<tr>
+										<td><span></span></td>
+										<td><span></span></td>
+										<td><span></span></td>
+										<td><span></span></td>
+										<td><span></span></td>
+										<td><span></span></td>
+										<td><span></span></td>
+									</tr>
+								</table>
+							</li>
+							<li>
+								 <ul class="calendar-head-subnav">
+									<li>
+										<ul class="date-subnav">
+											<li class="icon-jiantou-left decline-y"></li>
+											<li><span class="j-year">2017</span>年</li>
+											<li class="icon-jiantou increasing-y"></li>
+										</ul>
+									</li>
+									<li>
+										<ul class="date-subnav">
+											<li class="icon-jiantou-left decline"></li>
+											<li><span class="j-month">7</span>月</li>
+											<li class="icon-jiantou increasing"></li>
+										</ul>
+									</li>
+							   </ul>
+
+								<table class="date-con-week">
+									<tr>
+										<th>一</th>
+										<th>二</th>
+										<th>三</th>
+										<th>四</th>
+										<th>五</th>
+										<th>六</th>
+										<th>日</th>
+									</tr>
+									<tr class="week-tr">
+										<td><span></span></td>
+										<td><span></span></td>
+										<td><span></span></td>
+										<td><span></span></td>
+										<td><span></span></td>
+										<td><span></span></td>
+										<td><span></span></td>
+									</tr>
+									<tr class="week-tr">
+										<td><span></span></td>
+										<td><span></span></td>
+										<td><span></span></td>
+										<td><span></span></td>
+										<td><span></span></td>
+										<td><span></span></td>
+										<td><span></span></td>
+									</tr>
+									<tr class="week-tr">
+										<td><span></span></td>
+										<td><span></span></td>
+										<td><span></span></td>
+										<td><span></span></td>
+										<td><span></span></td>
+										<td><span></span></td>
+										<td><span></span></td>
+									</tr>
+									<tr class="week-tr">
+										<td><span></span></td>
+										<td><span></span></td>
+										<td><span></span></td>
+										<td><span></span></td>
+										<td><span></span></td>
+										<td><span></span></td>
+										<td><span></span></td>
+									</tr>
+									<tr class="week-tr">
+										<td><span></span></td>
+										<td><span></span></td>
+										<td><span></span></td>
+										<td><span></span></td>
+										<td><span></span></td>
+										<td><span></span></td>
+										<td><span></span></td>
+									</tr>
+									<tr class="week-tr">
+										<td><span></span></td>
+										<td><span></span></td>
+										<td><span></span></td>
+										<td><span></span></td>
+										<td><span></span></td>
+										<td><span></span></td>
+										<td><span></span></td>
+									</tr>
+								</table>
+							</li>
+							<li>
+								<ul class="calendar-head-subnav">
+									<li>
+										<ul class="date-subnav">
+											<li class="icon-jiantou-left decline-y"></li>
+											<li><span class="j-year">2017</span>年</li>
+											<li class="icon-jiantou increasing-y"></li>
+										</ul>
+									</li>
+							   </ul>
+								<table class="date-con-month">
+									<tr>
+										<td><span>1</span>月</td>
+										<td><span>2</span>月</td>
+										<td><span>3</span>月</td>
+									</tr>
+									<tr>
+										<td><span>4</span>月</td>
+										<td><span>5</span>月</td>
+										<td><span>6</span>月</td>
+									</tr>
+									<tr>
+										<td><span>7</span>月</td>
+										<td><span>8</span>月</td>
+										<td><span>9</span>月</td>
+									</tr>
+									<tr>
+										<td><span>10</span>月</td>
+										<td><span>11</span>月</td>
+										<td><span>12</span>月</td>
+									</tr>
+								</table>
+							</li>
+							<li>
+								<div style="height: 20px;"></div>
+								<table class="date-con-year">
+									<tr>
+										<td><span>2013</span>年</td>
+										<td><span>2014</span>年</td>
+										<td><span>2015</span>年</td>
+									</tr>
+									<tr>
+										<td><span>2016</span>年</td>
+										<td class="active"><span>2017</span>年</td>
+										<td><span>2018</span>年</td>
+									</tr>
+									<tr>
+										<td><span>2019</span>年</td>
+										<td><span>2020</span>年</td>
+										<td><span>2021</span>年</td>
+									</tr>
+									<tr>
+										<td><span>2022</span>年</td>
+										<td><span>2023</span>年</td>
+										<td><span>2024</span>年</td>
+									</tr>
+								</table>
+							</li>
+						</ul>
+					</div>
+				</div>
+	</div>
+        <div class="nav-query">高级查询</div>
+    </div>
+    <div class="column-form">
+    	<div class="form-height"></div>
+    </div>
+    <div class="ranking-list">排行榜</div>
+    <div class="column-form">
+    	<div>
+            <ul class="ranking-item">
+                <li>提交率</li>
+                <li>
+                    <div class="ranking-ranking"><span>1</span></div>
+                    <div class="ranking-portrait">
+                        <div class="icon-touxiang"><img src="http://www.qqjay.com/uploads/allimg/160306/1_0PP4Q19.jpg" alt=""></div>
+                    </div>
+                    <div class="ranking-ranking-name">红桃</div>
+                    <div class="ranking-index">98%</div>
+                    <div class="ranking-state icon-zhizheng-top"></div>
+                </li>
+                <li>
+                    <div class="ranking-ranking"><span>2</span></div>
+                    <div class="ranking-portrait">
+                        <div class="icon-touxiang"><img src="http://www.qqjay.com/uploads/allimg/160306/1_0PP4Q19.jpg" alt=""></div>
+                    </div>
+                    <div class="ranking-ranking-name">舒畅</div>
+                    <div class="ranking-index">97%</div>
+                    <div class="ranking-state icon-zhizheng-top-b"></div>
+                </li>
+                <li>
+                    <div class="ranking-ranking"><span>3</span></div>
+                    <div class="ranking-portrait">
+                        <div class="icon-touxiang"><img src="http://www.qqjay.com/uploads/allimg/160306/1_0PP4Q19.jpg" alt=""></div>
+                    </div>
+                    <div class="ranking-ranking-name">邓家佳</div>
+                    <div class="ranking-index">96%</div>
+                    <div class="ranking-state">-</div>
+                </li>
+                <li>
+                    <div class="ranking-ranking"><span>4</span></div>
+                    <div class="ranking-portrait">
+                        <div class="icon-touxiang"><img src="http://www.qqjay.com/uploads/allimg/160306/1_0PP4Q19.jpg" alt=""></div>
+                    </div>
+                    <div class="ranking-ranking-name">陈晓曦</div>
+                    <div class="ranking-index">95%</div>
+                    <div class="ranking-state icon-zhizheng-top"></div>
+                </li>
+                <li>
+                    <div class="ranking-ranking"><span>5</span></div>
+                    <div class="ranking-portrait">
+                        <div class="icon-touxiang"><img src="http://www.qqjay.com/uploads/allimg/160306/1_0PP4Q19.jpg" alt=""></div>
+                    </div>
+                    <div class="ranking-ranking-name">冯晨晨</div>
+                    <div class="ranking-index">94%</div>
+                    <div class="ranking-state icon-zhizheng-top-b"></div>
+                </li>
+            </ul>  
+        </div>
+        <div>
+            <ul class="ranking-item">
+                <li>获赞率</li>
+                <li>
+                    <div class="ranking-ranking"><span>1</span></div>
+                    <div class="ranking-portrait">
+                        <div class="icon-touxiang"><img src="http://www.qqjay.com/uploads/allimg/160306/1_0PP4Q19.jpg" alt=""></div>
+                    </div>
+                    <div class="ranking-ranking-name">红桃</div>
+                    <div class="ranking-index">11.4</div>
+                    <div class="ranking-state icon-zhizheng-top"></div>
+                </li>
+                <li>
+                    <div class="ranking-ranking"><span>2</span></div>
+                    <div class="ranking-portrait">
+                        <div class="icon-touxiang"><img src="http://www.qqjay.com/uploads/allimg/160306/1_0PP4Q19.jpg" alt=""></div>
+                    </div>
+                    <div class="ranking-ranking-name">舒畅</div>
+                    <div class="ranking-index">11.1</div>
+                    <div class="ranking-state icon-zhizheng-top-b"></div>
+                </li>
+                <li>
+                    <div class="ranking-ranking"><span>3</span></div>
+                    <div class="ranking-portrait">
+                        <div class="icon-touxiang"><img src="http://www.qqjay.com/uploads/allimg/160306/1_0PP4Q19.jpg" alt=""></div>
+                    </div>
+                    <div class="ranking-ranking-name">邓家佳</div>
+                    <div class="ranking-index">10.2</div>
+                    <div class="ranking-state">-</div>
+                </li>
+                <li>
+                    <div class="ranking-ranking"><span>4</span></div>
+                    <div class="ranking-portrait">
+                        <div class="icon-touxiang"><img src="http://www.qqjay.com/uploads/allimg/160306/1_0PP4Q19.jpg" alt=""></div>
+                    </div>
+                    <div class="ranking-ranking-name">陈晓曦</div>
+                    <div class="ranking-index">9.5</div>
+                    <div class="ranking-state icon-zhizheng-top"></div>
+                </li>
+                <li>
+                    <div class="ranking-ranking"><span>5</span></div>
+                    <div class="ranking-portrait">
+                        <div class="icon-touxiang"><img src="http://www.qqjay.com/uploads/allimg/160306/1_0PP4Q19.jpg" alt=""></div>
+                    </div>
+                    <div class="ranking-ranking-name">冯晨晨</div>
+                    <div class="ranking-index">8.0</div>
+                    <div class="ranking-state icon-zhizheng-top-b"></div>
+                </li>
+            </ul>  
+        </div>
+        <div>
+            <ul class="ranking-item">
+                <li>获评率</li>
+                <li>
+                    <div class="ranking-ranking"><span>1</span></div>
+                    <div class="ranking-portrait">
+                        <div class="icon-touxiang"><img src="http://www.qqjay.com/uploads/allimg/160306/1_0PP4Q19.jpg" alt=""></div>
+                    </div>
+                    <div class="ranking-ranking-name">红桃</div>
+                    <div class="ranking-index">98%</div>
+                    <div class="ranking-state icon-zhizheng-top"></div>
+                </li>
+                <li>
+                    <div class="ranking-ranking"><span>2</span></div>
+                    <div class="ranking-portrait">
+                        <div class="icon-touxiang"><img src="http://www.qqjay.com/uploads/allimg/160306/1_0PP4Q19.jpg" alt=""></div>
+                    </div>
+                    <div class="ranking-ranking-name">舒畅</div>
+                    <div class="ranking-index">97%</div>
+                    <div class="ranking-state icon-zhizheng-top-b"></div>
+                </li>
+                <li>
+                    <div class="ranking-ranking"><span>3</span></div>
+                    <div class="ranking-portrait">
+                        <div class="icon-touxiang"><img src="http://www.qqjay.com/uploads/allimg/160306/1_0PP4Q19.jpg" alt=""></div>
+                    </div>
+                    <div class="ranking-ranking-name">邓家佳</div>
+                    <div class="ranking-index">96%</div>
+                    <div class="ranking-state">-</div>
+                </li>
+                <li>
+                    <div class="ranking-ranking"><span>4</span></div>
+                    <div class="ranking-portrait">
+                        <div class="icon-touxiang"><img src="http://www.qqjay.com/uploads/allimg/160306/1_0PP4Q19.jpg" alt=""></div>
+                    </div>
+                    <div class="ranking-ranking-name">陈晓曦</div>
+                    <div class="ranking-index">95%</div>
+                    <div class="ranking-state icon-zhizheng-top"></div>
+                </li>
+                <li>
+                    <div class="ranking-ranking"><span>5</span></div>
+                    <div class="ranking-portrait">
+                        <div class="icon-touxiang"><img src="http://www.qqjay.com/uploads/allimg/160306/1_0PP4Q19.jpg" alt=""></div>
+                    </div>
+                    <div class="ranking-ranking-name">冯晨晨</div>
+                    <div class="ranking-index">94%</div>
+                    <div class="ranking-state icon-zhizheng-top-b"></div>
+                </li>
+            </ul>  
+        </div>
+    </div>
+    </div>
+    <script src="calendar/calendar.js"></script>
+</body>
+</html>
+
+

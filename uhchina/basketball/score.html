@@ -1,0 +1,688 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta http-equiv="x-dns-prefetch-control" content="off">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<meta name="google" content="nositelinkssearchbox">
+	<meta name="google" content="notranslate">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="stylesheet" href="../css/base.css">
+	<link rel="stylesheet" href="../css/basketball/score.css">
+	<script src="../js/score.js"></script>
+	<title>比分</title>
+</head>
+
+<body>
+	<header class="body-header">
+		<header>
+			<a href="../index.html" class="return"><span class="heiti">&lt;</span></a>
+			<span  id="header-p">篮球比分</span>
+			<a href="#" id="header-menu"></a>
+		</header>
+		<aside>
+			<header class="close">赛事选择</header>
+			<section>
+				<div class="section-match">
+					<ul class="match-menu" id="match-menu">
+						<li class="match-menu-list">全部</li>
+						<li>一级</li>
+						<li>竞猜</li>
+						<li>北单</li>
+						<li>足彩</li>
+					</ul>
+				</div>
+				<ul class="match-list">
+					<li class="one" id="onee">
+						<label><input name="世青杯" type="checkbox" class="checkbox"/>世青杯</label> 
+					</li>
+					<li class="two">
+						<label><input name="球会友谊" type="checkbox" class="checkbox" />球会友谊</label> 
+					</li>
+					<li class="one">
+						<label><input name="国际友谊" type="checkbox" class="checkbox"/>国际友谊</label> 
+					</li>
+					<li class="two">
+						<label><input name="欧罗巴杯" type="checkbox" class="checkbox"/>欧罗巴杯</label> 
+					</li>
+					<li class="one">
+						<label><input name="英女足" type="checkbox" class="checkbox"/>英女足</label> 
+					</li>
+					<li class="two">
+						<label><input name="意丙" type="checkbox" class="checkbox"/>意丙</label> 
+					</li>
+					<li class="one">
+						<label><input name="德乙" type="checkbox" class="checkbox"/>德乙</label> 
+					</li>
+					<li class="two">
+						<label><input name="法乙" type="checkbox" class="checkbox"/>法乙</label> 
+					</li>
+					<li class="three">
+						<label><input name="法女甲" type="checkbox" class="checkbox"/>法女甲</label> 
+					</li>
+					<li class="three">
+						<label><input name="match" type="checkbox" class="checkbox"/>苏冠</label> 
+					</li>
+					<li class="three">
+						<label><input name="match" type="checkbox" class="checkbox"/>荷甲</label> 
+					</li>
+					<li class="three">
+						<label><input name="match" type="checkbox" class="checkbox"/>荷乙</label> 
+					</li>
+					<li class="one">
+						<label><input name="match" type="checkbox" class="checkbox"/>瑞典甲</label> 
+					</li>
+					<li class="four">
+						<label><input name="match" type="checkbox" class="checkbox"/>瑞典乙</label> 
+					</li>
+					<li class="four">
+						<label><input name="match" type="checkbox" class="checkbox"/>瑞典丙</label> 
+					</li>
+					<li class="one">
+						<label><input name="世青杯" type="checkbox" class="checkbox"/>世青杯</label> 
+					</li>
+					<li class="four">
+						<label><input name="球会友谊" type="checkbox" class="checkbox" />球会友谊</label> 
+					</li>
+					<li class="four">
+						<label><input name="国际友谊" type="checkbox" class="checkbox"/>国际友谊</label> 
+					</li>
+					<li class="one">
+						<label><input name="欧罗巴杯" type="checkbox" class="checkbox"/>欧罗巴杯</label> 
+					</li>
+					<li class="four">
+						<label><input name="英女足" type="checkbox" class="checkbox"/>英女足</label> 
+					</li>
+					<li class="one">
+						<label><input name="意丙" type="checkbox" class="checkbox"/>意丙</label> 
+					</li>
+					<li class="one">
+						<label><input name="德乙" type="checkbox" class="checkbox"/>德乙</label> 
+					</li>
+					<li class="four">
+						<label><input name="法乙" type="checkbox" class="checkbox"/>法乙</label> 
+					</li>
+					<li class="one">
+						<label><input name="法女甲" type="checkbox" class="checkbox"/>法女甲</label> 
+					</li>
+					<li class="four">
+						<label><input name="match" type="checkbox" class="checkbox"/>苏冠</label> 
+					</li>
+					<li class="four">
+						<label><input name="match" type="checkbox" class="checkbox"/>荷甲</label> 
+					</li>
+					<li class="one">
+						<label><input name="match" type="checkbox" class=""/>荷乙</label> 
+					</li>
+					<li class="four">
+						<label><input name="match" type="checkbox" class="checkbox"/>瑞典甲</label> 
+					</li>
+					<li class="one">
+						<label><input name="match" type="checkbox" class="checkbox"/>瑞典乙</label> 
+					</li>
+					<li class="four">
+						<label><input name="match" type="checkbox" class="checkbox"/>瑞典丙</label> 
+					</li>
+				</ul>
+				<div class="batch">
+					<span>
+						<a id="selectAll">全选</a>
+						<span>|</span>
+						<a id="reverseSelection">反选</a>
+					</span>
+					<span>
+						隐藏了<span id="batch-number">0</span>场
+					</span>
+				</div>
+				<div class="determine">
+					<a id="submit">确定</a>
+				</div>
+			</section>
+		</aside>
+		<section id="menu-section">
+			<header class="close">全部栏目</header>
+			<section>
+				<div class="menuBox" style="position: relative;">
+					<ul class="head-nav" id="head-nav">
+						<li class="liactive"  title="left">足球</li>
+						<li  title="right">篮球</li>
+					</ul>
+				</div>
+				<div class="contentBox">
+					<ul class="head-menu">
+						<li>
+							<ul class="head-submenu">
+								<li>
+									<a href="../football/score.html">
+										<img src="../imgage/bifen.png" alt=""><span>比分</span>
+									</a>
+								</li>
+								<li>
+									<a href="../football/schedule.html">
+										<img src="../imgage/saicheng.png" alt=""><span>赛程</span>
+									</a>
+								</li>
+								<li>
+									<a href="../football/match.html">
+										<img src="../imgage/saishi.png" alt=""><span>赛事</span>
+									</a>
+								</li>
+								<li>
+									<a href="../football/result.html">
+										<img src="../imgage/saiguo.png" alt=""><span>赛果</span>
+									</a>
+								</li>
+								<li>
+									<a href="../football/videotape.html">
+										<img src="../imgage/luxiang.png" alt=""><span>录像</span>
+									</a>
+								</li>
+								<li>
+									<a href="../football/direct_seeding.html">
+										<img src="../imgage/zhibo.png" alt=""><span>直播</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img src="../imgage/ziliao.png" alt=""><span>资料库</span>
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<ul class="head-submenu">
+								<li>
+									<a href="score.html">
+										<img src="../imgage/bifen.png" alt=""><span>比分</span>
+									</a>
+								</li>
+								<li>
+									<a href="schedule.html">
+										<img src="../imgage/saicheng.png" alt=""><span>赛程</span>
+									</a>
+								</li>
+								<li>
+									<a href="match.html">
+										<img src="../imgage/saishi.png" alt=""><span>赛事</span>
+									</a>
+								</li>
+								<li>
+									<a href="result.html">
+										<img src="../imgage/saiguo.png" alt=""><span>赛果</span>
+									</a>
+								</li>
+								<li>
+									<a href="videotape.html">
+										<img src="../imgage/luxiang.png" alt=""><span>录像</span>
+									</a>
+								</li>
+								<li>
+									<a href="direct_seeding.html">
+										<img src="../imgage/zhibo.png" alt=""><span>直播</span>
+									</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</section>
+		</section>
+	</header>
+	<aside class="body-aside"></aside>
+	<section class="body-section">
+		<header class="menuBox-b">
+			<ul class="nav">
+				<li class="liactive-b">全部</li>
+				<li>进行中</li>
+				<li>未开始</li>
+			</ul>
+		</header>
+		<article class="content">
+			<ul class="list">
+				<li class="item">
+					<a href="detailed.html">
+						<table class="form-list">
+							<tr>
+								<td>阿尔及利亚超</td>
+								<td>06:30</td>
+								<td colspan="5">第四节 00:23</td>
+								<td rowspan="3"><span class="heiti">&gt;</span></td>
+							</tr>
+							<tr>
+								<td  colspan="2">Olympique Batna</td>
+								<td>25</td>
+								<td>17</td>
+								<td>54</td>
+								<td>2</td>
+								<td>98</td>
+							</tr>
+							<tr>
+								<td  colspan="2">阿雷迪卡</td>
+								<td>25</td>
+								<td>17</td>
+								<td>22</td>
+								<td>30</td>
+								<td>94</td>
+							</tr>
+						</table>
+					</a>
+				</li>
+				<li class="item item2">
+					<a href="detailed.html">
+						<table class="form-list">
+							<tr>
+								<td>多米尼加共和国</td>
+								<td>08:00</td>
+								<td colspan="5">第四节 03:16</td>
+								<td rowspan="3"><span class="heiti">&gt;</span></td>
+							</tr>
+							<tr>
+								<td  colspan="2">Huracanes</td>
+								<td>30</td>
+								<td>21</td>
+								<td>26</td>
+								<td>17</td>
+								<td>94</td>
+							</tr>
+							<tr>
+								<td  colspan="2">印第乌斯</td>
+								<td>23</td>
+								<td>29</td>
+								<td>25</td>
+								<td>16</td>
+								<td>93</td>
+							</tr>
+						</table>
+					</a>
+				</li>
+				<li class="item item2">
+					<a href="#">
+						<table class="form-list">
+							<tr>
+								<td>波多黎哥</td>
+								<td>08:00</td>
+								<td colspan="5">第三节 05:10</td>
+								<td rowspan="3"><span class="heiti">&gt;</span></td>
+							</tr>
+							<tr>
+								<td  colspan="2">宠塞</td>
+								<td>30</td>
+								<td>14</td>
+								<td>15</td>
+								<td></td>
+								<td>59</td>
+							</tr>
+							<tr>
+								<td  colspan="2">克布拉迪亚斯</td>
+								<td>21</td>
+								<td>23</td>
+								<td>4</td>
+								<td></td>
+								<td>48</td>
+							</tr>
+						</table>
+					</a>
+				</li>
+				<li class="item item4">
+					<a href="#">
+						<table class="form-list">
+							<tr>
+								<td>乌拉圭</td>
+								<td>09:00</td>
+								<td colspan="5">第四节 06:12</td>
+								<td rowspan="3"><span class="heiti">&gt;</span></td>
+							</tr>
+							<tr>
+								<td  colspan="2">阿雷迪卡</td>
+								<td>15</td>
+								<td>15</td>
+								<td>22</td>
+								<td>6</td>
+								<td>58</td>
+							</tr>
+							<tr>
+								<td  colspan="2">米拉马尔</td>
+								<td>17</td>
+								<td>11</td>
+								<td>15</td>
+								<td>28</td>
+								<td>71</td>
+							</tr>
+						</table>
+					</a>
+				</li>
+				<li class="item item3">
+					<a href="#">
+						<table class="form-list">
+							<tr>
+								<td>女美锦</td>
+								<td>09:00</td>
+								<td colspan="5">第四节 02:15</td>
+								<td rowspan="3"><span class="heiti">&gt;</span></td>
+							</tr>
+							<tr>
+								<td  colspan="2">委内瑞拉(女)</td>
+								<td>6</td>
+								<td>13</td>
+								<td>11</td>
+								<td>12</td>
+								<td>42</td>
+							</tr>
+							<tr>
+								<td  colspan="2">阿根廷(女)</td>
+								<td>17</td>
+								<td>23</td>
+								<td>20</td>
+								<td>11</td>
+								<td>52</td>
+							</tr>
+						</table>
+					</a>
+				</li>
+				<li class="not-begin">
+					<a href="#">
+						<table>
+							<tr>
+								<td>委内瑞拉LP8</td>
+								<td>07:30</td>
+								<td colspan="5">未开赛</td>
+								<td rowspan="3"><span class="heiti">&gt;</span></td>
+							</tr>
+							<tr>
+								<td  colspan="2">瓜罗斯</td>
+								<td>0</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td>0</td>
+							</tr>
+							<tr>
+								<td  colspan="2">特罗塔门多斯</td>
+								<td>0</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td>0</td>
+							</tr>
+						</table>
+					</a>
+				</li>
+				<li class="not-begin">
+					<a href="#">
+						<table>
+							<tr>
+								<td>阿尔及利亚超</td>
+								<td>07:00</td>
+								<td colspan="5">未开赛</td>
+								<td rowspan="3"><span class="heiti">&gt;</span></td>
+							</tr>
+							<tr>
+								<td  colspan="2">Olympique Batna</td>
+								<td>0</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td>0</td>
+							</tr>
+							<tr>
+								<td  colspan="2">US塞提夫</td>
+								<td>0</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td>0</td>
+							</tr>
+						</table>
+					</a>
+				</li>
+				<li class="not-begin">
+					<a href="#">
+						<table>
+							<tr>
+								<td>国际赛</td>
+								<td>07:00</td>
+								<td colspan="5">未开赛</td>
+								<td rowspan="3"><span class="heiti">&gt;</span></td>
+							</tr>
+							<tr>
+								<td  colspan="2">斯洛伐克</td>
+								<td>0</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td>0</td>
+							</tr>
+							<tr>
+								<td  colspan="2">捷克</td>
+								<td>0</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td>0</td>
+							</tr>
+						</table>
+					</a>
+				</li>
+				<li class="not-begin">
+					<a href="#">
+						<table>
+							<tr>
+								<td>友谊赛</td>
+								<td>07:00</td>
+								<td colspan="5">未开赛</td>
+								<td rowspan="3"><span class="heiti">&gt;</span></td>
+							</tr>
+							<tr>
+								<td  colspan="2">白俄女篮</td>
+								<td>0</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td>0</td>
+							</tr>
+							<tr>
+								<td  colspan="2">乌克兰女篮</td>
+								<td>0</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td>0</td>
+							</tr>
+						</table>
+					</a>
+				</li>
+				<li class="not-begin">
+					<a href="#">
+						<table>
+							<tr>
+								<td>波篮甲</td>
+								<td>07:00</td>
+								<td colspan="5">未开赛</td>
+								<td rowspan="3"><span class="heiti">&gt;</span></td>
+							</tr>
+							<tr>
+								<td  colspan="2">绿山城</td>
+								<td>0</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td>0</td>
+							</tr>
+							<tr>
+								<td  colspan="2">托伦</td>
+								<td>0</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td>0</td>
+							</tr>
+						</table>
+					</a>
+				</li>
+				<li class="not-begin">
+					<a href="#">
+						<table>
+							<tr>
+								<td>VTB杯</td>
+								<td>07:00</td>
+								<td colspan="5">未开赛</td>
+								<td rowspan="3"><span class="heiti">&gt;</span></td>
+							</tr>
+							<tr>
+								<td  colspan="2">其姆奇</td>
+								<td>0</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td>0</td>
+							</tr>
+							<tr>
+								<td  colspan="2">中央陆军</td>
+								<td>0</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td>0</td>
+							</tr>
+						</table>
+					</a>
+				</li>
+				<li class="not-begin">
+					<a href="#">
+						<table>
+							<tr>
+								<td>友谊赛</td>
+								<td>07:00</td>
+								<td colspan="5">未开赛</td>
+								<td rowspan="3"><span class="heiti">&gt;</span></td>
+							</tr>
+							<tr>
+								<td  colspan="2">日本女篮</td>
+								<td>0</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td>0</td>
+							</tr>
+							<tr>
+								<td  colspan="2">塞尔维亚女篮</td>
+								<td>0</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td>0</td>
+							</tr>
+						</table>
+					</a>
+				</li>
+				<li class="not-begin">
+					<a href="#">
+						<table>
+							<tr>
+								<td>奥篮甲</td>
+								<td>06:00</td>
+								<td colspan="5">未开赛</td>
+								<td rowspan="3"><span class="heiti">&gt;</span></td>
+							</tr>
+							<tr>
+								<td  colspan="2">卡芬堡</td>
+								<td>0</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td>0</td>
+							</tr>
+							<tr>
+								<td  colspan="2">奥博瓦</td>
+								<td>0</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td>0</td>
+							</tr>
+						</table>
+					</a>
+				</li>
+				<li class="not-begin">
+					<a href="#">
+						<table>
+							<tr>
+								<td>NBA</td>
+								<td>10:00</td>
+								<td colspan="5">未开赛</td>
+								<td rowspan="3"><span class="heiti">&gt;</span></td>
+							</tr>
+							<tr>
+								<td  colspan="2">勇士</td>
+								<td>0</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td>0</td>
+							</tr>
+							<tr>
+								<td  colspan="2">骑士</td>
+								<td>0</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td>0</td>
+							</tr>
+						</table>
+					</a>
+				</li>
+				<li class="not-begin">
+					<a href="#">
+						<table>
+							<tr>
+								<td>纽西联</td>
+								<td>10:00</td>
+								<td colspan="5">未开赛</td>
+								<td rowspan="3"><span class="heiti">&gt;</span></td>
+							</tr>
+							<tr>
+								<td  colspan="2">惠灵顿圣徒</td>
+								<td>0</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td>0</td>
+							</tr>
+							<tr>
+								<td  colspan="2">尼森贾</td>
+								<td>0</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td>0</td>
+							</tr>
+						</table>
+					</a>
+				</li>
+			</ul>
+		</article>
+	</section>
+	<footer>
+		©20012-2017 足球之夜 版权所有
+		<a href="http://www.uhchina.com"><img src="../imgage/pc-icon.png" alt=""></a>
+	</footer>
+	<script src="../js/main.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

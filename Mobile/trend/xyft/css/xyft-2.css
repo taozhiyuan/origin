@@ -1,0 +1,224 @@
+@charset "UTF-8";
+
+
+div#max-select a:nth-of-type(2){
+	color: red;
+	border-color: red;
+}
+
+div#whole section{
+	position: relative;
+	flex: 1;
+	overflow: scroll;
+	display: flex;
+	flex-flow: column;
+	display: -webkit-flex; /* Safari */
+    -webkit-flex-flow: column; /* Safari 6.1+ */
+}
+			div#time{
+				width: 100%;
+				height: 30px;
+				text-align: center;
+				line-height: 30px;
+				color: #555;
+				background: #f4f4f4;
+				border-bottom: 1px solid #ccc;
+			}
+						div#time>span{
+							color: red;
+						}
+						div#xjssc_img01{
+							width: 100%;
+						}
+
+
+				section>nav{
+					width: 100%;
+					height: 37px;
+					margin-top: 5px;
+					text-align: center;
+					font-size: 14px;
+					background: white;
+					overflow: scroll;
+				}
+					section>nav>ul{
+						width: 200vw;
+						display: block;
+					}
+						section>nav li{
+							float: left;
+							height: 30px;
+							width: 17vw;
+							margin-right: 1vw;
+							border: 1px solid #ccc;
+							line-height: 30px;
+							color: #aaa;
+						}
+								section>nav ul li:nth-child(1){
+									border-color: red;
+									color: red;
+								}
+
+
+
+
+
+/*表格部分开始*/
+
+					section>div.scroll-form{
+						position: relative;
+						flex: 1;
+						width: 100%;
+					}
+
+							div.form-full{
+								position: absolute;
+								width: 100%;
+								left: 0;
+								top: 0;
+								right: 0;
+								bottom: 0;
+								display: flex;
+							}
+
+									div.form-left{
+										float: left;
+										display: flex;
+										flex-flow: column;
+										min-height: 240px;
+									}
+
+										div.header{
+											width: 118px;
+											height: 61px;
+											text-align: center;
+											line-height: 61px;
+											background: #E1E1D2;
+											border: 1px solid #ccc;
+											border-bottom: none;
+											
+										}
+										div.left-bottom{
+											width: 120px;
+											flex: 1;
+											overflow: hidden;
+											
+										}
+
+													table.table_left th{
+														font-weight: normal;
+													}
+															table.table_left td{
+																border: 1px solid #ccc;
+															}
+															table.table_left tr:nth-of-type(odd){
+																background: #F5F5F0;
+															}
+
+
+
+							div.form-right{
+								min-height: 240px;
+								float: left;
+								height:100%;
+								overflow: hidden;
+								flex: 1;
+								display: flex;
+								flex-flow: column;
+							}
+
+									div.right-top{
+										width: 100%;
+										overflow: hidden;
+									}
+
+											div.right-top>table.table-right{
+												min-width: 575px;
+												background: #E1E1D2;
+												border-top: 1px solid #ccc;
+											}
+
+													table.table-right th{
+														font-weight: normal;
+														border-bottom: 1px solid #ccc;
+														border-right: 1px solid #ccc;
+													}
+
+														div.right-top>table.table-right td{
+															width: 40px;
+															background: #F5F5F0;
+															border-right: 1px solid #ccc;
+															border-bottom: 1px solid #ccc;
+														}
+
+
+								div.right-bottom{
+									width: 100%;
+									flex: 1;
+									overflow: scroll;
+									position: relative;
+								}
+									div.right-bottom>table.table-bottom{
+										min-width: 575px;
+										color: #aaa;
+									}
+										div.right-bottom>table.table-bottom td{
+											width: 40px;
+											border-right: 1px solid #ccc;
+											border-bottom: 1px solid #ccc;
+										}
+
+										div.right-bottom>table.table-bottom span{
+											display: inline-block;
+											background: #FFD700;
+											color: white;
+											width: 20px;
+											height: 20px;
+											border-radius: 50%;
+											margin: 1px;
+										}
+										div.right-bottom>table.table-bottom tr:nth-of-type(odd){
+											background: #F5F5F0;
+										}
+
+
+												td.background_FFD700{
+													background: #FFD700;
+													color: white;
+												}
+												td.background_71C671{
+													background: #71C671;
+													color: white;
+												}
+												td.background_6495ED{
+													background: #6495ED;
+													color: white;
+												}
+svg#line-svg{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 410px;
+	height: 430px;
+}
+svg#line-svg line{
+	stroke:rgba(255,0,0,0.5);
+	stroke-width:2;
+}
+/*表格部分结束*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,1261 @@
+@charset "UTF-8";
+div.elastic{
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-flow: column;
+	overflow: scroll;
+}
+		table td{
+			height: 0.5rem;
+			position: relative;
+			white-space:nowrap;
+			border-right: 1px solid #e6e6e6;
+		}
+		table th{
+			height: 0.35rem;
+		}
+
+aside.body-aside{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.4);
+	z-index: 29;
+	display: none;
+}
+
+header.body-header{
+	width: 100%;
+	height: 0.5rem;
+	position: relative;
+}
+		header.body-header>header{
+			height: 0.5rem;
+			color: #29abe2;
+			font-size: 0.16rem;
+			line-height: 0.5rem;
+			text-align: center;
+			width: 100%;
+			background: #fff;
+			position: fixed;
+			top: 0;
+			left: 0;
+			z-index: 10;
+			box-shadow: 0rem 0.01rem 0.02rem #E6E6E6;
+		}
+				header.body-header>header>a{
+					display: block;
+					width: 0.5rem;
+					height: 0.5rem;
+				}
+				header.body-header>header>a.return{
+					text-align: center;
+					color: #29abe2;
+					float: left;
+					line-height: 0.5rem;
+					font-size: 0.2rem;
+				}
+				header.body-header>header>a#header-menu{
+					float: right;
+					background-image: url(../../imgage/menu.png);
+					background-size: contain;
+				}
+
+
+
+	header.body-header>section{
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 30;
+		display: none;
+		width: 100%;
+	}
+			header.body-header>section>header{
+				background: #fff;
+				height: 0.5rem;
+				text-align: center;
+				font-size: 0.18rem;
+				line-height: 0.7rem;
+				color: #29abe2;
+			}
+			header.body-header>section>section{
+				height: 3rem;
+				overflow: hidden;
+				background: #fff;
+				display: flex;
+				flex-flow: column;
+			}
+					header.body-header ul.head-nav{
+						width: 2rem;
+						height: 0.3rem;
+						background: #fff;
+						margin: 0.15rem auto;
+						overflow: hidden;
+						text-align: center;
+						border: 1px solid  #29abe2;
+						border-radius: 0.04rem;
+						display: flex;
+					}
+							ul.head-nav li{
+								color:  #29abe2;
+								float: none;
+								flex: 1;
+								line-height: 0.3rem;
+							}
+							ul.head-nav li.liactive{
+								color:  #fff;
+								background: #29abe2;
+							}
+
+			div.contentBox {
+				flex: 1;
+				width: 100%;
+				background-color: #fff;
+				overflow: hidden;
+				position: relative;
+			}
+
+				header.body-header ul.head-menu{
+					height: 2.4rem;
+					width: 200%;
+					display: flex;
+					visibility: visible;
+					justify-content: center;
+					align-items: center;
+					position: absolute;
+					left: 0;
+					top: 0;
+					transition: all 0.5s ease;
+				}
+						header.body-header ul.head-menu li{
+							display: block;
+							flex: 1;
+						}
+
+
+					header.body-header ul.head-submenu{
+						width: 100%;
+						height: 2.4rem;
+						padding-top: 0.2rem;
+						padding-left: 5%;
+						padding-right: 5%;
+						background: #f2f2f2;
+					}
+						header.body-header ul.head-submenu>li{
+							float: left;
+							height: 1.1rem;
+							width: 25%;
+							text-align: center;
+							
+						}
+							header.body-header ul.head-submenu a{
+								display: inline-block;
+								width: 0.7rem;
+								height: 0.7rem;
+							}
+
+
+
+article.banner{
+	width: 100%;
+	padding-bottom: 14%;
+}
+		article.banner>img{
+			float: left;
+		}
+
+section.body-section{
+	flex: 1;
+	display: flex;
+	flex-flow: column;
+	overflow: hidden;
+}
+
+		div.search-div{
+			height: 0.4rem;
+			text-align: center;
+		}
+div.search-div>input{
+	height: 0.3rem;
+	width: 80%;
+	margin-top: 0.05rem;
+	text-align: center;
+	font-size: 0.16rem;
+	border-radius: 0.04rem;
+}
+
+		header.body-menu{
+			width: 100%;
+			overflow: hidden;
+			background: #fff;
+		}
+		section.body-section ul.nav{
+			width: 100%;
+			height: 0.5rem;
+			overflow: hidden;
+		}
+				ul.nav>li{
+					width: 20%;
+					float: left;
+					text-align: center;
+					line-height: 0.5rem;
+					position: relative;
+				}
+						ul.nav>li{
+							color: #aaa;
+						}
+						ul.nav>li.liactive-a{
+							color: #333;
+						}
+						ul.nav>li.liactive-a::after{
+							content: "";
+							position: relative;
+							left: 0;
+							bottom: 2px;
+							display: block;
+							background: #29abe2;
+							height: 2px;
+						}
+
+
+		div.menuBox-b{
+			height: 0.6rem;
+			padding-top: 0.15rem;
+		}
+			section.body-section ul.body-nav{
+				width: 2.5rem;
+				height: 0.3rem;
+				background: #fff;
+				margin: 0 auto;
+				overflow: hidden;
+				text-align: center;
+				border: 1px solid  #29abe2;
+				border-radius: 0.04rem;
+				display: flex;
+			}
+					ul.body-nav li{
+						color:  #29abe2;
+						float: none;
+						flex: 1;
+						line-height: 0.28rem;
+						border-right: 1px solid #29abe2;
+/*						font-size: 0.16rem;*/
+					}
+					ul.body-nav li:last-child{
+						border: none;
+					}
+					ul.body-nav li.liactive-b{
+						color:  #fff;
+						background: #29abe2;
+					}
+
+
+
+
+
+
+
+		article.content{
+			width: 100%;
+			position: relative;
+			flex: 1;
+		}
+
+				ul.section-menu{
+					height: 100%;
+					overflow: hidden;
+					display: flex;
+					width: 300%;
+					visibility: visible;
+					position: absolute;
+					left: 0;
+					top: 0;
+					transition: all 0.5s ease;
+				}
+						ul.section-menu>li{
+							overflow: scroll;
+							flex: 1;
+							height: 100%;
+						}
+						ul.section-menu li.country table{
+							display: none;
+						}
+						ul.section-menu li.continent table{
+							display: none;
+						}
+						ul.section-menu li.international table{
+							display: table;
+						}
+
+						ul.section-menu table{
+							background: #f2f2f2;
+						}
+								ul.section-menu table a{
+									display: block;
+									color: #333;
+									line-height: 0.4rem;
+									text-align: left;
+								}
+								ul.section-menu table span{
+									display: block;
+									width: 0.22rem;
+									height: 0.22rem;
+									border-radius: 50%;
+									float: left;
+									margin: 0.09rem 0.08rem 0.09rem 0.14rem;
+									background-size: contain;
+									background-repeat: no-repeat;
+									background-position: center;
+								}
+
+
+						ul.section-menu li table.europe{
+							display: table;
+						}
+
+
+/*欧洲*/
+							li.country table.europe tr:nth-child(1) td:nth-child(1) span{
+								background-image: url(../../imgage/country/europe/ygl.png);
+							}
+							li.country table.europe tr:nth-child(1) td:nth-child(2) span{
+								background-image: url(../../imgage/country/europe/yidali.bmp);
+							}
+							li.country table.europe tr:nth-child(1) td:nth-child(3) span{
+								background-image: url(../../imgage/country/europe/xby.png);
+							}
+							li.country table.europe tr:nth-child(2) td:nth-child(1) span{
+								background-image: url(../../imgage/country/europe/deguo.png);
+							}
+							li.country table.europe tr:nth-child(2) td:nth-child(2) span{
+								background-image: url(../../imgage/country/europe/faguo.png);
+							}
+							li.country table.europe tr:nth-child(2) td:nth-child(3) span{
+								background-image: url(../../imgage/country/europe/putaoya.png);
+							}
+							li.country table.europe tr:nth-child(3) td:nth-child(1) span{
+								background-image: url(../../imgage/country/europe/sgl.png);
+							}
+							li.country table.europe tr:nth-child(3) td:nth-child(2) span{
+								background-image: url(../../imgage/country/europe/helan.png);
+							}
+							li.country table.europe tr:nth-child(3) td:nth-child(3) span{
+								background-image: url(../../imgage/country/europe/bls.png);
+							}
+							li.country table.europe tr:nth-child(4) td:nth-child(1) span{
+								background-image: url(../../imgage/country/europe/ruidian.png);
+							}
+							li.country table.europe tr:nth-child(4) td:nth-child(2) span{
+								background-image: url(../../imgage/country/europe/fl.png);
+							}
+							li.country table.europe tr:nth-child(4) td:nth-child(3) span{
+								background-image: url(../../imgage/country/europe/novi.png);
+							}
+							li.country table.europe tr:nth-child(5) td:nth-child(1) span{
+								background-image: url(../../imgage/country/europe/danmai.png);
+							}
+							li.country table.europe tr:nth-child(5) td:nth-child(2) span{
+								background-image: url(../../imgage/country/europe/adl.png);
+							}
+							li.country table.europe tr:nth-child(5) td:nth-child(3) span{
+								background-image: url(../../imgage/country/europe/rs.png);
+							}
+							li.country table.europe tr:nth-child(6) td:nth-child(1) span{
+								background-image: url(../../imgage/country/europe/aierlan.png);
+							}
+							li.country table.europe tr:nth-child(6) td:nth-child(2) span{
+								background-image: url(../../imgage/country/europe/bael.png);
+							}
+							li.country table.europe tr:nth-child(6) td:nth-child(3) span{
+								background-image: url(../../imgage/country/europe/els.png);
+							}
+							li.country table.europe tr:nth-child(7) td:nth-child(1) span{
+								background-image: url(../../imgage/country/europe/bolan.png);
+							}
+							li.country table.europe tr:nth-child(7) td:nth-child(2) span{
+								background-image: url(../../imgage/country/europe/wkl.png);
+							}
+							li.country table.europe tr:nth-child(7) td:nth-child(3) span{
+								background-image: url(../../imgage/country/europe/jieke.png);
+							}
+							li.country table.europe tr:nth-child(8) td:nth-child(1) span{
+								background-image: url(../../imgage/country/europe/xila.png);
+							}
+							li.country table.europe tr:nth-child(8) td:nth-child(2) span{
+								background-image: url(../../imgage/country/europe/lmny.png);
+							}
+							li.country table.europe tr:nth-child(8) td:nth-child(3) span{
+								background-image: url(../../imgage/country/europe/slfk.png);
+							}
+							li.country table.europe tr:nth-child(9) td:nth-child(1) span{
+								background-image: url(../../imgage/country/europe/bd.png);
+							}
+							li.country table.europe tr:nth-child(9) td:nth-child(2) span{
+								background-image: url(../../imgage/country/europe/ltwy.png);
+							}
+							li.country table.europe tr:nth-child(9) td:nth-child(3) span{
+								background-image: url(../../imgage/country/europe/baieluos.png);
+							}
+							li.country table.europe tr:nth-child(10) td:nth-child(1) span{
+								background-image: url(../../imgage/country/europe/litaowan.png);
+							}
+							li.country table.europe tr:nth-child(10) td:nth-child(2) span{
+								background-image: url(../../imgage/country/europe/wes.png);
+							}
+							li.country table.europe tr:nth-child(10) td:nth-child(3) span{
+								background-image: url(../../imgage/country/europe/xyl.png);
+							}
+							li.country table.europe tr:nth-child(11) td:nth-child(1) span{
+								background-image: url(../../imgage/country/europe/teq.png);
+							}
+							li.country table.europe tr:nth-child(11) td:nth-child(2) span{
+								background-image: url(../../imgage/country/europe/kldy.png);
+							}
+							li.country table.europe tr:nth-child(11) td:nth-child(3) span{
+								background-image: url(../../imgage/country/europe/bjly.png);
+							}
+							li.country table.europe tr:nth-child(12) td:nth-child(1) span{
+								background-image: url(../../imgage/country/europe/slwny.png);
+							}
+							li.country table.europe tr:nth-child(12) td:nth-child(2) span{
+								background-image: url(../../imgage/country/europe/spls.png);
+							}
+							li.country table.europe tr:nth-child(12) td:nth-child(3) span{
+								background-image: url(../../imgage/country/europe/sewy.png);
+							}
+							li.country table.europe tr:nth-child(13) td:nth-child(1) span{
+								background-image: url(../../imgage/country/europe/ysl.png);
+							}
+							li.country table.europe tr:nth-child(13) td:nth-child(2) span{
+								background-image: url(../../imgage/country/europe/aebny.png);
+							}
+							li.country table.europe tr:nth-child(13) td:nth-child(3) span{
+								background-image: url(../../imgage/country/europe/hskst.png);
+							}
+							li.country table.europe tr:nth-child(14) td:nth-child(1) span{
+								background-image: url(../../imgage/country/europe/bohei.png);
+							}
+							li.country table.europe tr:nth-child(14) td:nth-child(2) span{
+								background-image: url(../../imgage/country/europe/asny.png);
+							}
+							li.country table.europe tr:nth-child(14) td:nth-child(3) span{
+								background: url(../../imgage/country/europe/medw.png);
+							}
+							li.country table.europe tr:nth-child(15) td:nth-child(1) span{
+								background-image: url(../../imgage/country/europe/amny.png);
+							}
+							li.country table.europe tr:nth-child(15) td:nth-child(2) span{
+								background-image: url(../../imgage/country/europe/heishan.png);
+							}
+							li.country table.europe tr:nth-child(15) td:nth-child(3) span{
+								background-image: url(../../imgage/country/europe/met.png);
+							}
+							li.country table.europe tr:nth-child(16) td:nth-child(1) span{
+								background-image: url(../../imgage/country/europe/lsb.png);
+							}
+							li.country table.europe tr:nth-child(16) td:nth-child(2) span{
+								background-image: url(../../imgage/country/europe/flqd.png);
+							}
+							li.country table.europe tr:nth-child(16) td:nth-child(3) span{
+								background-image: url(../../imgage/country/europe/gljy.png);
+							}
+							li.country table.europe tr:nth-child(17) td:nth-child(1) span{
+								background-image: url(../../imgage/country/europe/asbj.png);
+							}
+							li.country table.europe tr:nth-child(17) td:nth-child(2) span{
+								background-image: url(../../imgage/country/europe/mqd.png);
+							}
+							li.country table.europe tr:nth-child(17) td:nth-child(3) span{
+								background-image: url(../../imgage/country/europe/ade.png);
+							}
+							li.country table.europe tr:nth-child(18) td:nth-child(1) span{
+								background-image: url(../../imgage/country/europe/smln.png);
+							}
+
+/*亚洲*/
+							li.country table.asia tr:nth-child(1) td:nth-child(1) span{
+								background-image: url(../../imgage/country/asia/china.png);
+							}
+							li.country table.asia tr:nth-child(1) td:nth-child(2) span{
+								background-image: url(../../imgage/country/asia/ribeng.png);
+							}
+							li.country table.asia tr:nth-child(1) td:nth-child(3) span{
+								background-image: url(../../imgage/country/asia/hanguo.png);
+							}
+							li.country table.asia tr:nth-child(2) td:nth-child(1) span{
+								background-image: url(../../imgage/country/asia/stalb.png);
+							}
+							li.country table.asia tr:nth-child(2) td:nth-child(2) span{
+								background-image: url(../../imgage/country/asia/yilang.png);
+							}
+							li.country table.asia tr:nth-child(2) td:nth-child(3) span{
+								background-image: url(../../imgage/country/asia/alq.png);
+							}
+							li.country table.asia tr:nth-child(3) td:nth-child(1) span{
+								background-image: url(../../imgage/country/asia/xjp.png);
+							}
+							li.country table.asia tr:nth-child(3) td:nth-child(2) span{
+								background-image: url(../../imgage/country/asia/mlxy.png);
+							}
+							li.country table.asia tr:nth-child(3) td:nth-child(3) span{
+								background-image: url(../../imgage/country/asia/balin.png);
+							}
+							li.country table.asia tr:nth-child(4) td:nth-child(1) span{
+								background-image: url(../../imgage/country/asia/kte.png);
+							}
+							li.country table.asia tr:nth-child(4) td:nth-child(2) span{
+								background-image: url(../../imgage/country/asia/yemeng.png);
+							}
+							li.country table.asia tr:nth-child(4) td:nth-child(3) span{
+								background-image: url(../../imgage/country/asia/yuedan.png);
+							}
+							li.country table.asia tr:nth-child(5) td:nth-child(1) span{
+								background-image: url(../../imgage/country/asia/taiguo.png);
+							}
+							li.country table.asia tr:nth-child(5) td:nth-child(2) span{
+								background-image: url(../../imgage/country/asia/kwt.png);
+							}
+							li.country table.asia tr:nth-child(5) td:nth-child(3) span{
+								background-image: url(../../imgage/country/asia/aman.png);
+							}
+							li.country table.asia tr:nth-child(6) td:nth-child(1) span{
+								background-image: url(../../imgage/country/asia/lbn.png);
+							}
+							li.country table.asia tr:nth-child(6) td:nth-child(2) span{
+								background-image: url(../../imgage/country/asia/ylk.png);
+							}
+							li.country table.asia tr:nth-child(6) td:nth-child(3) span{
+								background-image: url(../../imgage/country/asia/yidu.png);
+							}
+							li.country table.asia tr:nth-child(7) td:nth-child(1) span{
+								background-image: url(../../imgage/country/asia/yuenan.png);
+							}
+							li.country table.asia tr:nth-child(7) td:nth-child(2) span{
+								background-image: url(../../imgage/country/asia/ydnxy.png);
+							}
+							li.country table.asia tr:nth-child(7) td:nth-child(3) span{
+								background-image: url(../../imgage/country/asia/wzbk.png);
+							}
+							li.country table.asia tr:nth-child(8) td:nth-child(1) span{
+								background-image: url(../../imgage/country/asia/xuliya.png);
+							}
+
+/*美洲*/
+							li.country table.america tr:nth-child(1) td:nth-child(1) span{
+								background-image: url(../../imgage/country/america/agt.png);
+							}
+							li.country table.america tr:nth-child(1) td:nth-child(2) span{
+								background-image: url(../../imgage/country/america/baxi.png);
+							}
+							li.country table.america tr:nth-child(1) td:nth-child(3) span{
+								background-image: url(../../imgage/country/america/meiguo.png);
+							}
+							li.country table.america tr:nth-child(2) td:nth-child(1) span{
+								background-image: url(../../imgage/country/america/zhili.png);
+							}
+							li.country table.america tr:nth-child(2) td:nth-child(2) span{
+								background-image: url(../../imgage/country/america/mxg.png);
+							}
+							li.country table.america tr:nth-child(2) td:nth-child(3) span{
+								background-image: url(../../imgage/country/america/balagui.png);
+							}
+							li.country table.america tr:nth-child(3) td:nth-child(1) span{
+								background-image: url(../../imgage/country/america/milu.png);
+							}
+							li.country table.america tr:nth-child(3) td:nth-child(2) span{
+								background-image: url(../../imgage/country/america/wlg.png);
+							}
+							li.country table.america tr:nth-child(3) td:nth-child(3) span{
+								background-image: url(../../imgage/country/america/glby.png);
+							}
+							li.country table.america tr:nth-child(4) td:nth-child(1) span{
+								background-image: url(../../imgage/country/america/egde.png);
+							}
+							li.country table.america tr:nth-child(4) td:nth-child(2) span{
+								background-image: url(../../imgage/country/america/wnrl.png);
+							}
+							li.country table.america tr:nth-child(4) td:nth-child(3) span{
+								background-image: url(../../imgage/country/america/blwy.png);
+							}
+							li.country table.america tr:nth-child(5) td:nth-child(1) span{
+								background-image: url(../../imgage/country/america/hdls.png);
+							}
+							li.country table.america tr:nth-child(5) td:nth-child(2) span{
+								background-image: url(../../imgage/country/america/jianada.png);
+							}
+							li.country table.america tr:nth-child(5) td:nth-child(3) span{
+								background-image: url(../../imgage/country/america/gsdlj.png);
+							}
+							li.country table.america tr:nth-child(6) td:nth-child(1) span{
+								background-image: url(../../imgage/country/america/wdml.png);
+							}
+							li.country table.america tr:nth-child(6) td:nth-child(2) span{
+								background-image: url(../../imgage/country/america/sewd.png);
+								}
+/*非洲*/
+							li.country table.africa tr:nth-child(1) td:nth-child(1) span{
+								background-image: url(../../imgage/country/africa/nanfei.png);
+							}
+							li.country table.africa tr:nth-child(1) td:nth-child(2) span{
+								background-image: url(../../imgage/country/africa/nrly.png);
+							}
+							li.country table.africa tr:nth-child(1) td:nth-child(3) span{
+								background-image: url(../../imgage/country/africa/mlg.png);
+							}
+							li.country table.africa tr:nth-child(2) td:nth-child(1) span{
+								background-image: url(../../imgage/country/africa/tns.png);
+							}
+							li.country table.africa tr:nth-child(2) td:nth-child(2) span{
+								background-image: url(../../imgage/country/africa/aejly.png);
+							}
+							li.country table.africa tr:nth-child(2) td:nth-child(3) span{
+								background-image: url(../../imgage/country/africa/aiji.png);
+							}
+							li.country table.africa tr:nth-child(3) td:nth-child(1) span{
+								background-image: url(../../imgage/country/africa/libiya.png);
+							}
+							li.country table.africa tr:nth-child(3) td:nth-child(2) span{
+								background-image: url(../../imgage/country/africa/agl.png);
+							}
+							li.country table.africa tr:nth-child(3) td:nth-child(3) span{
+								background-image: url(../../imgage/country/africa/jiana.png);
+							}
+							li.country table.africa tr:nth-child(4) td:nth-child(1) span{
+								background-image: url(../../imgage/country/africa/snje.png);
+							}
+/*大洋洲*/
+							li.country table.oceania tr:nth-child(1) td:nth-child(1) span{
+								background-image: url(../../imgage/country/oceania/adly.png);
+							}
+							li.country table.oceania tr:nth-child(1) td:nth-child(2) span{
+								background-image: url(../../imgage/country/oceania/xinxilan.png);
+							}
+							li.country table.oceania tr:nth-child(1) td:nth-child(3) span{
+								background-image: url(../../imgage/country/oceania/wenji.jpg);
+							}
+
+
+
+
+
+
+/*欧洲*/
+				li.continent table.europe tr:nth-child(1) td:nth-child(1) span{
+					background-image: url(../../imgage/continent/europe/oguanbei.png);
+				}
+				li.continent table.europe tr:nth-child(1) td:nth-child(2) span{
+					background-image: url(../../imgage/continent/europe/ozhoubei.png);
+				}
+				li.continent table.europe tr:nth-child(1) td:nth-child(3) span{
+					background-image: url(../../imgage/continent/europe/olbb.png);
+				}
+				li.continent table.europe tr:nth-child(2) td:nth-child(1) span{
+					background-image: url(../../imgage/continent/europe/cbb.jpg);
+				}
+				li.continent table.europe tr:nth-child(2) td:nth-child(2) span{
+					background-image: url(../../imgage/continent/europe/qzb.jpg);
+				}
+				li.continent table.europe tr:nth-child(2) td:nth-child(3) span{
+					background-image: url(../../imgage/continent/europe/aodibei.jpg);
+				}
+				li.continent table.europe tr:nth-child(3) td:nth-child(1) span{
+					background-image: url(../../imgage/continent/europe/nogb.jpg);
+				}
+				li.continent table.europe tr:nth-child(3) td:nth-child(2) span{
+					background-image: url(../../imgage/continent/europe/oqinU21w.jpg);
+				}
+				li.continent table.europe tr:nth-child(3) td:nth-child(3) span{
+					background-image: url(../../imgage/continent/europe/oqingU21.jpg);
+				}
+				li.continent table.europe tr:nth-child(4) td:nth-child(1) span{
+					background-image: url(../../imgage/continent/europe/onvbei.png);
+				}
+				li.continent table.europe tr:nth-child(4) td:nth-child(2) span{
+					background-image: url(../../imgage/continent/europe/wblb.jpg);
+				}
+				li.continent table.europe tr:nth-child(4) td:nth-child(3) span{
+					background-image: url(../../imgage/continent/europe/snoy.png);
+				}
+				li.continent table.europe tr:nth-child(5) td:nth-child(1) span{
+					background-image: url(../../imgage/continent/europe/dblb.jpg);
+				}
+				li.continent table.europe tr:nth-child(5) td:nth-child(2) span{
+					background-image: url(../../imgage/continent/europe/bldb.jpg);
+				}
+				li.continent table.europe tr:nth-child(5) td:nth-child(3) span{
+					background-image: url(../../imgage/continent/europe/ttb.jpg);
+				}
+				li.continent table.europe tr:nth-child(6) td:nth-child(1) span{
+					background-image: url(../../imgage/continent/europe/oqinbei.jpg);
+				}
+				li.continent table.europe tr:nth-child(6) td:nth-child(2) span{
+					background-image: url(../../imgage/continent/europe/oqinU17.jpg);
+				}
+				li.continent table.europe tr:nth-child(6) td:nth-child(3) span{
+					background-image: url(../../imgage/continent/europe/noU19.jpg);
+				}
+				li.continent table.europe tr:nth-child(7) td:nth-child(1) span{
+					background-image: url(../../imgage/continent/europe/amb.jpg);
+				}
+				li.continent table.europe tr:nth-child(7) td:nth-child(2) span{
+					background-image: url(../../imgage/continent/europe/noU17.png);
+				}
+				li.continent table.europe tr:nth-child(7) td:nth-child(3) span{
+					background-image: url(../../imgage/continent/nbobU23.jpg);
+				}
+				li.continent table.europe tr:nth-child(8) td:nth-child(1) span{
+					background-image: url(../../imgage/continent/europe/CIS.jpg);
+				}
+				li.continent table.europe tr:nth-child(8) td:nth-child(2) span{
+					background-image: url(../../imgage/continent/europe/bll.jpg);
+				}
+				li.continent table.europe tr:nth-child(8) td:nth-child(3) span{
+					background-image: url(../../imgage/continent/europe/TIP.jpg);
+				}
+				li.continent table.europe tr:nth-child(9) td:nth-child(1) span{
+					background-image: url(../../imgage/continent/europe/CO.jpg);
+				}
+				li.continent table.europe tr:nth-child(9) td:nth-child(2) span{
+					background-image: url(../../imgage/continent/europe/beiol.jpg);
+				}
+				li.continent table.europe tr:nth-child(9) td:nth-child(3) span{
+					background-image: url(../../imgage/continent/europe/olU19.jpg);
+				}
+				li.continent table.europe tr:nth-child(10) td:nth-child(1) span{
+					background-image: url(../../imgage/continent/europe/dzy.png);
+				}
+				li.continent table.europe tr:nth-child(10) td:nth-child(2) span{
+					background-image: url(../../imgage/continent/europe/tyb.jpg);
+				}
+				li.continent table.europe tr:nth-child(10) td:nth-child(3) span{
+					background-image: url(../../imgage/continent/europe/nuochao.png);
+				}
+				li.continent table.europe tr:nth-child(11) td:nth-child(1) span{
+					background-image: url(../../imgage/continent/europe/boluo.jpg);
+				}
+				li.continent table.europe tr:nth-child(11) td:nth-child(2) span{
+					background-image: url(../../imgage/continent/europe/osjb.jpg);
+				}
+				li.continent table.europe tr:nth-child(11) td:nth-child(3) span{
+					background-image: url(../../imgage/continent/nbobU23.jpg);
+				}
+				li.continent table.europe tr:nth-child(12) td:nth-child(1) span{
+					background-image: url(../../imgage/continent/europe/bonqj.png);
+				}
+				li.continent table.europe tr:nth-child(12) td:nth-child(2) span{
+					background-image: url(../../imgage/continent/nbobU23.jpg);
+				}
+				li.continent table.europe tr:nth-child(12) td:nth-child(3) span{
+					background-image: url(../../imgage/continent/europe/boU17.png);
+				}
+				li.continent table.europe tr:nth-child(13) td:nth-child(1) span{
+					background-image: url(../../imgage/continent/europe/osU21.jpg);
+				}
+				li.continent table.europe tr:nth-child(13) td:nth-child(2) span{
+					background-image: url(../../imgage/continent/europe/dsn.png);
+				}
+
+/*亚洲*/
+				li.continent table.asia tr:nth-child(1) td:nth-child(1) span{
+					background-image: url(../../imgage/continent/asia/yzb.jpg);
+				}
+				li.continent table.asia tr:nth-child(1) td:nth-child(2) span{
+					background-image: url(../../imgage/continent/asia/ygb.jpg);
+				}
+				li.continent table.asia tr:nth-child(1) td:nth-child(3) span{
+					background-image: url(../../imgage/continent/asia/dyb.jpg);
+				}
+				li.continent table.asia tr:nth-child(2) td:nth-child(1) span{
+					background-image: url(../../imgage/continent/asia/nyb.png);
+				}
+				li.continent table.asia tr:nth-child(2) td:nth-child(2) span{
+					background-image: url(../../imgage/continent/asia/dynz.jpg);
+				}
+				li.continent table.asia tr:nth-child(2) td:nth-child(3) span{
+					background-image: url(../../imgage/continent/asia/nyby.jpg);
+				}
+				li.continent table.asia tr:nth-child(3) td:nth-child(1) span{
+					background-image: url(../../imgage/continent/asia/nyay.png);
+				}
+				li.continent table.asia tr:nth-child(3) td:nth-child(2) span{
+					background-image: url(../../imgage/continent/asia/yxb.png);
+				}
+				li.continent table.asia tr:nth-child(3) td:nth-child(3) span{
+					background-image: url(../../imgage/continent/asia/ytb.jpg);
+				}
+				li.continent table.asia tr:nth-child(4) td:nth-child(1) span{
+					background-image: url(../../imgage/continent/asia/dnj.jpg);
+				}
+				li.continent table.asia tr:nth-child(4) td:nth-child(2) span{
+					background-image: url(../../imgage/continent/asia/xyj.jpg);
+				}
+				li.continent table.asia tr:nth-child(4) td:nth-child(3) span{
+					background-image: url(../../imgage/continent/asia/yynz.jpg);
+				}
+				li.continent table.asia tr:nth-child(5) td:nth-child(1) span{
+					background-image: url(../../imgage/continent/asia/yynz.jpg);
+				}
+				li.continent table.asia tr:nth-child(5) td:nth-child(2) span{
+					background-image: url(../../imgage/continent/asia/hwjb.jpg);
+				}
+				li.continent table.asia tr:nth-child(5) td:nth-child(3) span{
+					background-image: url(../../imgage/continent/asia/nlb.jpg);
+				}
+				li.continent table.asia tr:nth-child(6) td:nth-child(1) span{
+					background-image: url(../../imgage/continent/nbobU23.jpg);
+				}
+				li.continent table.asia tr:nth-child(6) td:nth-child(2) span{
+					background-image: url(../../imgage/continent/asia/ndnj.png);
+				}
+				li.continent table.asia tr:nth-child(6) td:nth-child(3) span{
+					background-image: url(../../imgage/continent/nbobU23.jpg);
+				}
+				li.continent table.asia tr:nth-child(7) td:nth-child(1) span{
+					background-image: url(../../imgage/continent/asia/dyny.jpg);
+				}
+				li.continent table.asia tr:nth-child(7) td:nth-child(2) span{
+					background-image: url(../../imgage/continent/asia/yqU19.jpg);
+				}
+				li.continent table.asia tr:nth-child(7) td:nth-child(3) span{
+					background-image: url(../../imgage/continent/asia/dnyU19.png);
+				}
+				li.continent table.asia tr:nth-child(8) td:nth-child(1) span{
+					background-image: url(../../imgage/continent/nbobU23.jpg);
+				}
+				li.continent table.asia tr:nth-child(8) td:nth-child(2) span{
+					background-image: url(../../imgage/continent/nbobU23.jpg);
+				}
+				li.continent table.asia tr:nth-child(8) td:nth-child(3) span{
+					background-image: url(../../imgage/continent/asia/nynb.png);
+				}
+				li.continent table.asia tr:nth-child(9) td:nth-child(1) span{
+					background-image: url(../../imgage/continent/asia/dnyU20.png);
+				}
+				li.continent table.asia tr:nth-child(9) td:nth-child(2) span{
+					background-image: url(../../imgage/continent/asia/albU20.jpg);
+				}
+				li.continent table.asia tr:nth-child(9) td:nth-child(3) span{
+					background-image: url(../../imgage/continent/nbobU23.jpg);
+				}
+				li.continent table.asia tr:nth-child(10) td:nth-child(1) span{
+					background-image: url(../../imgage/continent/asia/nyy.png);
+				}
+				li.continent table.asia tr:nth-child(10) td:nth-child(2) span{
+					background-image: url(../../imgage/continent/asia/nnyy.png);
+				}
+				li.continent table.asia tr:nth-child(10) td:nth-child(3) span{
+					background-image: url(../../imgage/continent/asia/dyy.jpg);
+				}
+				li.continent table.asia tr:nth-child(11) td:nth-child(1) span{
+					background-image: url(../../imgage/continent/asia/dny.jpg);
+				}
+				li.continent table.asia tr:nth-child(11) td:nth-child(2) span{
+					background-image: url(../../imgage/continent/asia/qlb.png);
+				}
+				li.continent table.asia tr:nth-child(11) td:nth-child(3) span{
+					background-image: url(../../imgage/continent/nbobU23.jpg);
+				}
+				li.continent table.asia tr:nth-child(12) td:nth-child(1) span{
+					background-image: url(../../imgage/continent/asia/alg.jpg);
+				}
+				li.continent table.asia tr:nth-child(12) td:nth-child(2) span{
+					background-image: url(../../imgage/continent/asia/albb.jpg);
+				}
+				li.continent table.asia tr:nth-child(12) td:nth-child(3) span{
+					background-image: url(../../imgage/continent/asia/hwy.jpg);
+				}
+				li.continent table.asia tr:nth-child(13) td:nth-child(1) span{
+					background-image: url(../../imgage/continent/asia/duli.png);
+				}
+				li.continent table.asia tr:nth-child(13) td:nth-child(2) span{
+					background-image: url(../../imgage/continent/asia/hjb.jpg);
+				}
+				li.continent table.asia tr:nth-child(13) td:nth-child(3) span{
+					background-image: url(../../imgage/continent/asia/aly.jpg);
+				}
+				li.continent table.asia tr:nth-child(14) td:nth-child(1) span{
+					background-image: url(../../imgage/continent/asia/hpb.jpg);
+				}
+				li.continent table.asia tr:nth-child(14) td:nth-child(2) span{
+					background-image: url(../../imgage/continent/asia/nyqg.jpg);
+				}
+				li.continent table.asia tr:nth-child(14) td:nth-child(3) span{
+					background-image: url(../../imgage/continent/asia/nhpb.jpg);
+				}
+				li.continent table.asia tr:nth-child(15) td:nth-child(1) span{
+					background-image: url(../../imgage/continent/asia/yqU16.png);
+				}
+				li.continent table.asia tr:nth-child(15) td:nth-child(2) span{
+					background-image: url(../../imgage/continent/asia/dnyU16.png);
+				}
+				li.continent table.asia tr:nth-child(15) td:nth-child(3) span{
+					background-image: url(../../imgage/continent/asia/dnyU17.png);
+				}
+				li.continent table.asia tr:nth-child(16) td:nth-child(1) span{
+					background-image: url(../../imgage/continent/nbobU23.jpg);
+				}
+				li.continent table.asia tr:nth-child(16) td:nth-child(2) span{
+					background-image: url(../../imgage/continent/asia/hwU17.png);
+				}
+				li.continent table.asia tr:nth-child(16) td:nth-child(3) span{
+					background-image: url(../../imgage/continent/nbobU23.jpg);
+				}
+				li.continent table.asia tr:nth-child(17) td:nth-child(1) span{
+					background-image: url(../../imgage/continent/nbobU23.jpg);
+				}
+				li.continent table.asia tr:nth-child(17) td:nth-child(2) span{
+					background-image: url(../../imgage/continent/asia/yzhongb.jpg);
+				}
+				li.continent table.asia tr:nth-child(17) td:nth-child(3) span{
+					background-image: url(../../imgage/continent/asia/ysjb.jpg);
+				}
+				li.continent table.asia tr:nth-child(18) td:nth-child(1) span{
+					background-image: url(../../imgage/continent/asia/dnqg.jpg);
+				}
+				li.continent table.asia tr:nth-child(18) td:nth-child(2) span{
+					background-image: url(../../imgage/continent/asia/nygU16.png);
+				}
+
+/*美洲*/
+				li.continent table.america tr:nth-child(1) td:nth-child(1) span{
+					background-image: url(../../imgage/continent/america/mzb.png);
+				}
+				li.continent table.america tr:nth-child(1) td:nth-child(2) span{
+					background-image: url(../../imgage/continent/america/zyb.jpg);
+				}
+				li.continent table.america tr:nth-child(1) td:nth-child(3) span{
+					background-image: url(../../imgage/continent/america/nqb.jpg);
+				}
+				li.continent table.america tr:nth-child(2) td:nth-child(1) span{
+					background-image: url(../../imgage/continent/america/nmcb.jpg);
+				}
+				li.continent table.america tr:nth-child(2) td:nth-child(2) span{
+					background-image: url(../../imgage/continent/america/nng.jpg);
+				}
+				li.continent table.america tr:nth-child(2) td:nth-child(3) span{
+					background-image: url(../../imgage/continent/america/mjb.jpg);
+				}
+				li.continent table.america tr:nth-child(3) td:nth-child(1) span{
+					background-image: url(../../imgage/continent/america/mgb.jpg);
+				}
+				li.continent table.america tr:nth-child(3) td:nth-child(2) span{
+					background-image: url(../../imgage/continent/america/zmb.jpg);
+				}
+				li.continent table.america tr:nth-child(3) td:nth-child(3) span{
+					background-image: url(../../imgage/continent/america/fmnz.jpg);
+				}
+				li.continent table.america tr:nth-child(4) td:nth-child(1) span{
+					background-image: url(../../imgage/continent/america/nmU20.jpg);
+				}
+				li.continent table.america tr:nth-child(4) td:nth-child(2) span{
+					background-image: url(../../imgage/continent/america/mjb.png);
+				}
+				li.continent table.america tr:nth-child(4) td:nth-child(3) span{
+					background-image: url(../../imgage/continent/nbobU23.jpg);
+				}
+				li.continent table.america tr:nth-child(5) td:nth-child(1) span{
+					background-image: url(../../imgage/continent/america/zybU20.jpg);
+				}
+				li.continent table.america tr:nth-child(5) td:nth-child(2) span{
+					background-image: url(../../imgage/continent/america/nabm.png);
+				}
+				li.continent table.america tr:nth-child(5) td:nth-child(3) span{
+					background-image: url(../../imgage/continent/america/abx.png);
+				}
+				li.continent table.america tr:nth-child(6) td:nth-child(1) span{
+					background-image: url(../../imgage/continent/america/mqb.jpg);
+				}
+				li.continent table.america tr:nth-child(6) td:nth-child(2) span{
+					background-image: url(../../imgage/continent/america/fanmnz.jpg);
+				}
+				li.continent table.america tr:nth-child(6) td:nth-child(3) span{
+					background-image: url(../../imgage/continent/america/nmU17.jpg);
+				}
+				li.continent table.america tr:nth-child(7) td:nth-child(1) span{
+					background-image: url(../../imgage/continent/america/nngU20.jpg);
+				}
+				li.continent table.america tr:nth-child(7) td:nth-child(2) span{
+					background-image: url(../../imgage/continent/america/nbmU20.jpg);
+				}
+				li.continent table.america tr:nth-child(7) td:nth-child(3) span{
+					background-image: url(../../imgage/continent/america/nzyb.jpg);
+				}
+				li.continent table.america tr:nth-child(8) td:nth-child(1) span{
+					background-image: url(../../imgage/continent/america/zmyn.png);
+				}
+				li.continent table.america tr:nth-child(8) td:nth-child(2) span{
+					background-image: url(../../imgage/continent/america/zmyunn.png);
+				}
+				li.continent table.america tr:nth-child(8) td:nth-child(3) span{
+					background-image: url(../../imgage/continent/nbobU23.jpg);
+				}
+				li.continent table.america tr:nth-child(9) td:nth-child(1) span{
+					background-image: url(../../imgage/continent/america/nmjb.png);
+				}
+				li.continent table.america tr:nth-child(9) td:nth-child(2) span{
+					background-image: url(../../imgage/continent/nbobU23.jpg);
+				}
+				li.continent table.america tr:nth-child(9) td:nth-child(3) span{
+					background-image: url(../../imgage/continent/america/nmsn.jpg);
+				}
+				li.continent table.america tr:nth-child(10) td:nth-child(1) span{
+					background-image: url(../../imgage/continent/america/mqU17.jpg);
+				}
+				li.continent table.america tr:nth-child(10) td:nth-child(2) span{
+					background-image: url(../../imgage/continent/america/bmsnz.jpg);
+				}
+				li.continent table.america tr:nth-child(10) td:nth-child(3) span{
+					background-image: url(../../imgage/continent/america/nngU17.jpg);
+				}
+				li.continent table.america tr:nth-child(11) td:nth-child(1) span{
+					background-image: url(../../imgage/continent/nbobU23.jpg);
+				}
+				li.continent table.america tr:nth-child(11) td:nth-child(2) span{
+					background-image: url(../../imgage/continent/america/snmy.png);
+				}
+				li.continent table.america tr:nth-child(11) td:nth-child(3) span{
+					background-image: url(../../imgage/continent/america/nbmU17.jpg);
+				}
+				li.continent table.america tr:nth-child(12) td:nth-child(1) span{
+					background-image: url(../../imgage/continent/america/ngU15.jpg);
+				}
+				li.continent table.america tr:nth-child(12) td:nth-child(2) span{
+					background-image: url(../../imgage/continent/america/njl.png);
+				}
+
+
+
+/*非洲*/
+				li.continent table.africa tr:nth-child(1) td:nth-child(1) span{
+					background-image: url(../../imgage/continent/africa/fzb.png);
+				}
+				li.continent table.africa tr:nth-child(1) td:nth-child(2) span{
+					background-image: url(../../imgage/continent/africa/fgb.jpg);
+				}
+				li.continent table.africa tr:nth-child(1) td:nth-child(3) span{
+					background-image: url(../../imgage/continent/africa/flb.jpg);
+				}
+				li.continent table.africa tr:nth-child(2) td:nth-child(1) span{
+					background-image: url(../../imgage/continent/africa/zdfb.jpg);
+				}
+				li.continent table.africa tr:nth-child(2) td:nth-child(2) span{
+					background-image: url(../../imgage/continent/africa/fcb.jpg);
+				}
+				li.continent table.africa tr:nth-child(2) td:nth-child(3) span{
+					background-image: url(../../imgage/continent/africa/nfgb.png);
+				}
+				li.continent table.africa tr:nth-child(3) td:nth-child(1) span{
+					background-image: url(../../imgage/continent/nbobU23.jpg);
+				}
+				li.continent table.africa tr:nth-child(3) td:nth-child(2) span{
+					background-image: url(../../imgage/continent/nbobU23.jpg);
+				}
+				li.continent table.africa tr:nth-child(3) td:nth-child(3) span{
+					background-image: url(../../imgage/continent/nbobU23.jpg);
+				}
+				li.continent table.africa tr:nth-child(4) td:nth-child(1) span{
+					background-image: url(../../imgage/continent/africa/feiqb.jpg);
+				}
+				li.continent table.africa tr:nth-child(4) td:nth-child(2) span{
+					background-image: url(../../imgage/continent/nbobU23.jpg);
+				}
+				li.continent table.africa tr:nth-child(4) td:nth-child(3) span{
+					background-image: url(../../imgage/continent/africa/fgjb.jpg);
+				}
+				li.continent table.africa tr:nth-child(5) td:nth-child(1) span{
+					background-image: url(../../imgage/continent/nbobU23.jpg);
+				}
+				li.continent table.africa tr:nth-child(5) td:nth-child(2) span{
+					background-image: url(../../imgage/continent/africa/fqbw.png);
+				}
+				li.continent table.africa tr:nth-child(5) td:nth-child(3) span{
+					background-image: url(../../imgage/continent/nbobU23.jpg);
+				}
+				li.continent table.africa tr:nth-child(6) td:nth-child(1) span{
+					background-image: url(../../imgage/continent/africa/fqU17.png);
+				}
+
+/*大洋洲*/
+				li.continent table.oceania tr:nth-child(1) td:nth-child(1) span{
+					background-image: url(../../imgage/continent/oceania/dgb.jpg);
+				}
+				li.continent table.oceania tr:nth-child(1) td:nth-child(2) span{
+					background-image: url(../../imgage/continent/oceania/dynU20.png);
+				}
+				li.continent table.oceania tr:nth-child(1) td:nth-child(3) span{
+					background-image: url(../../imgage/continent/oceania/dygU20.png);
+				}
+				li.continent table.oceania tr:nth-child(2) td:nth-child(1) span{
+					background-image: url(../../imgage/continent/oceania/adyy.png);
+				}
+				li.continent table.oceania tr:nth-child(2) td:nth-child(2) span{
+					background-image: url(../../imgage/continent/nbobU23.jpg);
+				}
+				li.continent table.oceania tr:nth-child(2) td:nth-child(3) span{
+					background-image: url(../../imgage/continent/oceania/dynU17.png);
+				}
+				li.continent table.oceania tr:nth-child(3) td:nth-child(1) span{
+					background-image: url(../../imgage/continent/oceania/dygU17.png);
+				}
+
+
+
+
+/*国际赛事*/
+				li.international table tr:nth-child(1) td:nth-child(1) span{
+					background-image: url(../../imgage/international/sjb.jpg);
+				}
+				li.international table tr:nth-child(1) td:nth-child(2) span{
+					background-image: url(../../imgage/continent/nbobU23.jpg);
+				}
+				li.international table tr:nth-child(1) td:nth-child(3) span{
+					background-image: url(../../imgage/continent/nbobU23.jpg);
+				}
+				li.international table tr:nth-child(2) td:nth-child(1) span{
+					background-image: url(../../imgage/continent/nbobU23.jpg);
+				}
+				li.international table tr:nth-child(2) td:nth-child(2) span{
+					background-image: url(../../imgage/continent/nbobU23.jpg);
+				}
+				li.international table tr:nth-child(2) td:nth-child(3) span{
+					background-image: url(../../imgage/continent/nbobU23.jpg);
+				}
+				li.international table tr:nth-child(3) td:nth-child(1) span{
+					background-image: url(../../imgage/continent/nbobU23.jpg);
+				}
+				li.international table tr:nth-child(3) td:nth-child(2) span{
+					background-image: url(../../imgage/continent/nbobU23.jpg);
+				}
+				li.international table tr:nth-child(3) td:nth-child(3) span{
+					background-image: url(../../imgage/international/ozyx.jpg);
+				}
+				li.international table tr:nth-child(4) td:nth-child(1) span{
+					background-image: url(../../imgage/international/nmyx.jpg);
+				}
+				li.international table tr:nth-child(4) td:nth-child(2) span{
+					background-image: url(../../imgage/international/yzyx.jpg);
+				}
+				li.international table tr:nth-child(4) td:nth-child(3) span{
+					background-image: url(../../imgage/international/dyyx.jpg);
+				}
+				li.international table tr:nth-child(5) td:nth-child(1) span{
+					background-image: url(../../imgage/continent/nbobU23.jpg);
+				}
+				li.international table tr:nth-child(5) td:nth-child(2) span{
+					background-image: url(../../imgage/international/sgb.jpg);
+				}
+				li.international table tr:nth-child(5) td:nth-child(3) span{
+					background-image: url(../../imgage/international/aynz.jpg);
+				}
+				li.international table tr:nth-child(6) td:nth-child(1) span{
+					background-image: url(../../imgage/international/aoyunz.jpg);
+				}
+				li.international table tr:nth-child(6) td:nth-child(2) span{
+					background-image: url(../../imgage/international/nsjb.jpg);
+				}
+				li.international table tr:nth-child(6) td:nth-child(3) span{
+					background-image: url(../../imgage/continent/nbobU23.jpg);
+				}
+				li.international table tr:nth-child(7) td:nth-child(1) span{
+					background-image: url(../../imgage/international/sqb.jpg);
+				}
+				li.international table tr:nth-child(7) td:nth-child(2) span{
+					background-image: url(../../imgage/international/tlb.jpg);
+				}
+				li.international table tr:nth-child(7) td:nth-child(3) span{
+					background-image: url(../../imgage/continent/nbobU23.jpg);
+				}
+				li.international table tr:nth-child(8) td:nth-child(1) span{
+					background-image: url(../../imgage/international/jfb.jpg);
+				}
+				li.international table tr:nth-child(8) td:nth-child(2) span{
+					background-image: url(../../imgage/continent/nbobU23.jpg);
+				}
+				li.international table tr:nth-child(8) td:nth-child(3) span{
+					background-image: url(../../imgage/international/snbU20.jpg);
+				}
+				li.international table tr:nth-child(9) td:nth-child(1) span{
+					background-image: url(../../imgage/international/sqU17.jpg);
+				}
+				li.international table tr:nth-child(9) td:nth-child(2) span{
+					background-image: url(../../imgage/international/swz.jpg);
+				}
+				li.international table tr:nth-child(9) td:nth-child(3) span{
+					background-image: url(../../imgage/international/nsbU17.jpg);
+				}
+				li.international table tr:nth-child(10) td:nth-child(1) span{
+					background-image: url(../../imgage/international/ssnz.jpg);
+				}
+				li.international table tr:nth-child(10) td:nth-child(2) span{
+					background-image: url(../../imgage/international/ftg.jpg);
+				}
+				li.international table tr:nth-child(10) td:nth-child(3) span{
+					background-image: url(../../imgage/international/LGb.jpg);
+				}
+				li.international table tr:nth-child(11) td:nth-child(1) span{
+					background-image: url(../../imgage/international/qhyy.jpg);
+				}
+				li.international table tr:nth-child(11) td:nth-child(2) span{
+					background-image: url(../../imgage/international/axs.jpg);
+				}
+				li.international table tr:nth-child(11) td:nth-child(3) span{
+					background-image: url(../../imgage/international/fyy.jpg);
+				}
+				li.international table tr:nth-child(12) td:nth-child(1) span{
+					background-image: url(../../imgage/international/twb.jpg);
+				}
+				li.international table tr:nth-child(12) td:nth-child(2) span{
+					background-image: url(../../imgage/international/wblb.jpg);
+				}
+				li.international table tr:nth-child(12) td:nth-child(3) span{
+					background-image: url(../../imgage/international/sts.jpg);
+				}
+				li.international table tr:nth-child(13) td:nth-child(1) span{
+					background-image: url(../../imgage/international/UCS17.jpg);
+				}
+				li.international table tr:nth-child(13) td:nth-child(2) span{
+					background-image: url(../../imgage/international/dynz.jpg);
+				}
+				li.international table tr:nth-child(13) td:nth-child(3) span{
+					background-image: url(../../imgage/international/dblb.jpg);
+				}
+				li.international table tr:nth-child(14) td:nth-child(1) span{
+					background-image: url(../../imgage/continent/nbobU23.jpg);
+				}
+				li.international table tr:nth-child(14) td:nth-child(2) span{
+					background-image: url(../../imgage/continent/nbobU23.jpg);
+				}
+				li.international table tr:nth-child(14) td:nth-child(3) span{
+					background-image: url(../../imgage/international/ssyy.jpg);
+				}
+				li.international table tr:nth-child(15) td:nth-child(1) span{
+					background-image: url(../../imgage/continent/nbobU23.jpg);
+				}
+				li.international table tr:nth-child(15) td:nth-child(2) span{
+					background-image: url(../../imgage/international/stzj.jpg);
+				}
+				li.international table tr:nth-child(15) td:nth-child(3) span{
+					background-image: url(../../imgage/continent/nbobU23.jpg);
+				}
+				li.international table tr:nth-child(16) td:nth-child(1) span{
+					background-image: url(../../imgage/continent/nbobU23.jpg);
+				}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,1352 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta http-equiv="x-dns-prefetch-control" content="off">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<meta name="google" content="nositelinkssearchbox">
+	<meta name="google" content="notranslate">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/football/detailed.css">
+	<script src="js/datailed.js"></script>
+	<link rel="stylesheet" href="fonts/font-style.css">
+	<title>足球赛果</title>
+</head>
+
+<body>
+<div class="whole">
+<svg style="position: absolute; width: 0px; height: 0px; overflow: hidden;"> 
+	<symbol id="footfall-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+	<defs>
+		<style>#footfall-1 .cls-1{fill:#333;}#footfall-1 .cls-2{fill:none;stroke:#333;stroke-miterlimit:10;stroke-width:0.5px;}</style>
+	</defs>
+	<g><polygon class="cls-1" points="16.57 20.02 16.57 29.91 25.13 34.85 33.69 29.91 33.69 20.02 25.13 15.08 16.57 20.02"/><path class="cls-1" d="M9.64,33.88,4.15,28.94,2.76,30.75A22.93,22.93,0,0,0,8.94,41.41L11.22,41Z"/><path class="cls-1" d="M40.52,33.91,39,41.13l2.09.28a22.93,22.93,0,0,0,6.21-10.79L45.95,29Z"/><path class="cls-1" d="M40.59,16.06,46.1,21l1.17-1.55A22.93,22.93,0,0,0,41,8.56L39,8.9Z"/><path class="cls-1" d="M25.25,7.09l7-2.21L31.54,3a23,23,0,0,0-12.46-.17l-.79,2Z"/><path class="cls-1" d="M9.68,16l1.57-7.22L9.09,8.45A22.94,22.94,0,0,0,2.81,19.09l1.44,1.8Z"/><path class="cls-1" d="M25,42.83,18,45.1l.84,2a22.93,22.93,0,0,0,12.39,0L32,45Z"/><rect class="cls-1" x="10.15" y="6.64" width="9.49" height="0.18" transform="translate(-1.37 8.35) rotate(-30)"/><rect class="cls-1" x="30.79" y="6.78" width="9.49" height="0.18" transform="translate(62.86 30.59) rotate(-150)"/><rect class="cls-1" x="30.47" y="43.17" width="9.49" height="0.18" transform="translate(87.34 63.12) rotate(150)"/><rect class="cls-1" x="9.83" y="43.03" width="9.49" height="0.18" transform="translate(23.52 -1.51) rotate(30)"/><rect class="cls-1" x="-0.62" y="24.6" width="9.49" height="0.18" transform="translate(28.82 20.58) rotate(90)"/><rect class="cls-1" x="41.14" y="24.6" width="9.49" height="0.18" transform="translate(70.58 -21.18) rotate(90)"/><rect class="cls-1" x="20.27" y="11.16" width="9.49" height="0.18" transform="translate(36.26 -13.76) rotate(90)"/><rect class="cls-1" x="20.27" y="38.99" width="9.49" height="0.18" transform="translate(64.1 14.07) rotate(90)"/><rect class="cls-1" x="8.27" y="31.67" width="9.49" height="0.18" transform="translate(40.17 52.77) rotate(150)"/><rect class="cls-1" x="32.3" y="31.75" width="9.49" height="0.18" transform="translate(20.35 -14.07) rotate(29.34)"/><rect class="cls-1" x="32.33" y="17.85" width="9.49" height="0.18" transform="translate(-4.01 20.94) rotate(-30)"/><rect class="cls-1" x="8.3" y="17.77" width="9.49" height="0.18" transform="translate(15.66 39.83) rotate(-150.66)"/><circle class="cls-2" cx="25" cy="25" r="23"/></g>
+	</symbol>
+	<symbol id="footfall-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+		<defs><style>#footfall-2 .cls-1{fill:#29abe2;}#footfall-2 .cls-2{fill:none;stroke:#29abe2;stroke-miterlimit:10;stroke-width:0.5px;}#footfall-2 .cls-3{fill:red;}#footfall-2 .cls-4{fill:#fff;}</style>
+		</defs>
+		<g><polygon class="cls-1" points="16.57 20.02 16.57 29.91 25.13 34.85 33.69 29.91 33.69 20.02 25.13 15.08 16.57 20.02"/><path class="cls-1" d="M9.64,33.88,4.15,28.94,2.76,30.75A22.93,22.93,0,0,0,8.94,41.41L11.22,41Z"/><path class="cls-1" d="M40.52,33.91,39,41.13l2.09.28a22.93,22.93,0,0,0,6.21-10.79L45.95,29Z"/><path class="cls-1" d="M40.59,16.06,46.1,21l1.17-1.55A22.93,22.93,0,0,0,41,8.56L39,8.9Z"/><path class="cls-1" d="M25.25,7.09l7-2.21L31.54,3a23,23,0,0,0-12.46-.17l-.79,2Z"/><path class="cls-1" d="M9.68,16l1.57-7.22L9.09,8.45A22.94,22.94,0,0,0,2.81,19.09l1.44,1.8Z"/><path class="cls-1" d="M25,42.83,18,45.1l.84,2a22.93,22.93,0,0,0,12.39,0L32,45Z"/><rect class="cls-1" x="10.15" y="6.64" width="9.49" height="0.18" transform="translate(-1.37 8.35) rotate(-30)"/><rect class="cls-1" x="30.79" y="6.78" width="9.49" height="0.18" transform="translate(62.86 30.59) rotate(-150)"/><rect class="cls-1" x="30.47" y="43.17" width="9.49" height="0.18" transform="translate(87.34 63.12) rotate(150)"/><rect class="cls-1" x="9.83" y="43.03" width="9.49" height="0.18" transform="translate(23.52 -1.51) rotate(30)"/><rect class="cls-1" x="-0.62" y="24.6" width="9.49" height="0.18" transform="translate(28.82 20.58) rotate(90)"/><rect class="cls-1" x="41.14" y="24.6" width="9.49" height="0.18" transform="translate(70.58 -21.18) rotate(90)"/><rect class="cls-1" x="20.27" y="11.16" width="9.49" height="0.18" transform="translate(36.26 -13.76) rotate(90)"/><rect class="cls-1" x="20.27" y="38.99" width="9.49" height="0.18" transform="translate(64.1 14.07) rotate(90)"/><rect class="cls-1" x="8.27" y="31.67" width="9.49" height="0.18" transform="translate(40.17 52.77) rotate(150)"/><rect class="cls-1" x="32.3" y="31.75" width="9.49" height="0.18" transform="translate(20.35 -14.07) rotate(29.34)"/><rect class="cls-1" x="32.33" y="17.85" width="9.49" height="0.18" transform="translate(-4.01 20.94) rotate(-30)"/><rect class="cls-1" x="8.3" y="17.77" width="9.49" height="0.18" transform="translate(15.66 39.83) rotate(-150.66)"/><circle class="cls-2" cx="25" cy="25" r="23"/><path class="cls-3" d="M35.31,41.54a1,1,0,0,1-.71-.29L25,31.64l-9.6,9.6a1,1,0,0,1-1.41,0L8.76,36a1,1,0,0,1,0-1.41l9.6-9.6-9.6-9.6a1,1,0,0,1,0-1.41L14,8.76a1,1,0,0,1,1.41,0l9.6,9.6,9.6-9.6a1,1,0,0,1,1.41,0L41.24,14a1,1,0,0,1,0,1.41L31.64,25l9.6,9.6a1,1,0,0,1,0,1.41L36,41.24A1,1,0,0,1,35.31,41.54Z"/><path class="cls-4" d="M35.31,9.46l5.22,5.22L30.22,25,40.54,35.31l-5.22,5.22L25,30.22,14.69,40.54,9.46,35.31,19.78,25,9.46,14.69l5.22-5.22L25,19.78,35.31,9.46m-20.62-2a2,2,0,0,0-1.41.59L8.05,13.27a2,2,0,0,0,0,2.83l8.9,8.9-8.9,8.9a2,2,0,0,0,0,2.83l5.22,5.22a2,2,0,0,0,2.83,0l8.9-8.9,8.9,8.9a2,2,0,0,0,2.83,0l5.22-5.22a2,2,0,0,0,0-2.83L33.05,25l8.9-8.9a2,2,0,0,0,0-2.83L36.73,8.05a2,2,0,0,0-2.83,0L25,16.95l-8.9-8.9a2,2,0,0,0-1.41-.59Z"/>
+		</g>
+	</symbol>
+	<symbol id="footfall-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+		<defs><style>#footfall-3 .cls-1{fill:#29abe2;}#footfall-3 .cls-2{fill:none;stroke:#29abe2;stroke-miterlimit:10;stroke-width:0.5px;}</style></defs>
+		<g><polygon class="cls-1" points="16.57 20.02 16.57 29.91 25.13 34.85 33.69 29.91 33.69 20.02 25.13 15.08 16.57 20.02"/><path class="cls-1" d="M9.64,33.88,4.15,28.94,2.76,30.75A22.93,22.93,0,0,0,8.94,41.41L11.22,41Z"/><path class="cls-1" d="M40.52,33.91,39,41.13l2.09.28a22.93,22.93,0,0,0,6.21-10.79L45.95,29Z"/><path class="cls-1" d="M40.59,16.06,46.1,21l1.17-1.55A22.93,22.93,0,0,0,41,8.56L39,8.9Z"/><path class="cls-1" d="M25.25,7.09l7-2.21L31.54,3a23,23,0,0,0-12.46-.17l-.79,2Z"/><path class="cls-1" d="M9.68,16l1.57-7.22L9.09,8.45A22.94,22.94,0,0,0,2.81,19.09l1.44,1.8Z"/><path class="cls-1" d="M25,42.83,18,45.1l.84,2a22.93,22.93,0,0,0,12.39,0L32,45Z"/><rect class="cls-1" x="10.15" y="6.64" width="9.49" height="0.18" transform="translate(-1.37 8.35) rotate(-30)"/><rect class="cls-1" x="30.79" y="6.78" width="9.49" height="0.18" transform="translate(62.86 30.59) rotate(-150)"/><rect class="cls-1" x="30.47" y="43.17" width="9.49" height="0.18" transform="translate(87.34 63.12) rotate(150)"/><rect class="cls-1" x="9.83" y="43.03" width="9.49" height="0.18" transform="translate(23.52 -1.51) rotate(30)"/><rect class="cls-1" x="-0.62" y="24.6" width="9.49" height="0.18" transform="translate(28.82 20.58) rotate(90)"/><rect class="cls-1" x="41.14" y="24.6" width="9.49" height="0.18" transform="translate(70.58 -21.18) rotate(90)"/><rect class="cls-1" x="20.27" y="11.16" width="9.49" height="0.18" transform="translate(36.26 -13.76) rotate(90)"/><rect class="cls-1" x="20.27" y="38.99" width="9.49" height="0.18" transform="translate(64.1 14.07) rotate(90)"/><rect class="cls-1" x="8.27" y="31.67" width="9.49" height="0.18" transform="translate(40.17 52.77) rotate(150)"/><rect class="cls-1" x="32.3" y="31.75" width="9.49" height="0.18" transform="translate(20.35 -14.07) rotate(29.34)"/><rect class="cls-1" x="32.33" y="17.85" width="9.49" height="0.18" transform="matrix(0.87, -0.5, 0.5, 0.87, -4.01, 20.94)"/><rect class="cls-1" x="8.3" y="17.77" width="9.49" height="0.18" transform="translate(15.66 39.83) rotate(-150.66)"/><circle class="cls-2" cx="25" cy="25" r="23"/>
+		</g>
+	</symbol>
+	<symbol id="footfall-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+		<defs><style>#footfall-4 .cls-1{fill:red;}</style></defs>
+		<g><polygon class="cls-1" points="5.66 32.43 25 48.4 44.34 32.43 32.03 32.43 32.03 1.6 17.97 1.6 17.97 32.43 5.66 32.43"/></g>
+	</symbol>
+	<symbol id="footfall-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+		<defs><style>#footfall-5 .cls-1{fill:#39b54a;}</style></defs>
+		<g><polygon class="cls-1" points="44.34 17.57 25 1.6 5.66 17.57 17.97 17.57 17.97 48.4 32.03 48.4 32.03 17.57 44.34 17.57"/></g>
+	</symbol>
+	<symbol id="footfall-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+		<defs><style>#footfall-6 .cls-1{fill:#fbb03b;}</style></defs><g><rect class="cls-1" x="10.13" y="1.69" width="29.73" height="46.62" rx="3" ry="3"/></g>
+	</symbol>
+	<symbol id="footfall-7" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+		<defs><style>#footfall-7 .cls-1,#footfall-7 .cls-2{fill:none;stroke:#333;stroke-width:2px;}#footfall-7 .cls-1{stroke-miterlimit:10;}#footfall-7 .cls-2{stroke-linejoin:round;}</style></defs>
+		<g><path class="cls-1" d="M12.28,28l8.43,8.6,5.52-3.1-9.49-9.94s-1.63,1.76-2.19,2.32S12.28,28,12.28,28Z"/><path class="cls-2" d="M39.53,8.59c-2.19,2.9-4.48,4.8-8.39,5a12.81,12.81,0,0,1-6.84-1.51c-1.19,1.92-3.47,5.62-4.47,7.25-5.73,9.36-15.7,11.58-18,17.3-2.83,7.05,9,4.84,14.54,2.24,3-1.42,13.42-7.66,17.3-9.29s15-5,15-6C48.61,19.6,39.53,8.59,39.53,8.59Z"/>
+		</g>
+	</symbol>
+	<symbol id="footfall-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+		<defs><style>#footfall-8 .cls-1{fill:#ed1e79;}#footfall-8 .cls-2{fill:none;stroke:#ed1e79;stroke-miterlimit:10;stroke-width:0.5px;}</style></defs>
+		<g><polygon class="cls-1" points="16.57 20.02 16.57 29.91 25.13 34.85 33.69 29.91 33.69 20.02 25.13 15.08 16.57 20.02"/><path class="cls-1" d="M9.64,33.88,4.15,28.94,2.76,30.75A22.93,22.93,0,0,0,8.94,41.41L11.22,41Z"/><path class="cls-1" d="M40.52,33.91,39,41.13l2.09.28a22.93,22.93,0,0,0,6.21-10.79L45.95,29Z"/><path class="cls-1" d="M40.59,16.06,46.1,21l1.17-1.55A22.93,22.93,0,0,0,41,8.56L39,8.9Z"/><path class="cls-1" d="M25.25,7.09l7-2.21L31.54,3a23,23,0,0,0-12.46-.17l-.79,2Z"/><path class="cls-1" d="M9.68,16l1.57-7.22L9.09,8.45A22.94,22.94,0,0,0,2.81,19.09l1.44,1.8Z"/><path class="cls-1" d="M25,42.83,18,45.1l.84,2a22.93,22.93,0,0,0,12.39,0L32,45Z"/><rect class="cls-1" x="10.15" y="6.64" width="9.49" height="0.18" transform="translate(-1.37 8.35) rotate(-30)"/><rect class="cls-1" x="30.79" y="6.78" width="9.49" height="0.18" transform="translate(62.86 30.59) rotate(-150)"/><rect class="cls-1" x="30.47" y="43.17" width="9.49" height="0.18" transform="translate(87.34 63.12) rotate(150)"/><rect class="cls-1" x="9.83" y="43.03" width="9.49" height="0.18" transform="translate(23.52 -1.51) rotate(30)"/><rect class="cls-1" x="-0.62" y="24.6" width="9.49" height="0.18" transform="translate(28.82 20.58) rotate(90)"/><rect class="cls-1" x="41.14" y="24.6" width="9.49" height="0.18" transform="translate(70.58 -21.18) rotate(90)"/><rect class="cls-1" x="20.27" y="11.16" width="9.49" height="0.18" transform="translate(36.26 -13.76) rotate(90)"/><rect class="cls-1" x="20.27" y="38.99" width="9.49" height="0.18" transform="translate(64.1 14.07) rotate(90)"/><rect class="cls-1" x="8.27" y="31.67" width="9.49" height="0.18" transform="translate(40.17 52.77) rotate(150)"/><rect class="cls-1" x="32.3" y="31.75" width="9.49" height="0.18" transform="translate(20.35 -14.07) rotate(29.34)"/><rect class="cls-1" x="32.33" y="17.85" width="9.49" height="0.18" transform="matrix(0.87, -0.5, 0.5, 0.87, -4.01, 20.94)"/><rect class="cls-1" x="8.3" y="17.77" width="9.49" height="0.18" transform="translate(15.66 39.83) rotate(-150.66)"/><circle class="cls-2" cx="25" cy="25" r="23"/>
+		</g>
+	</symbol>
+	<symbol id="footfall-9" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70 40">
+		<defs><style>#footfall-9 .cls-1{fill:#aaa;}#footfall-9 .cls-2{fill:none;stroke:#fff;stroke-miterlimit:10;}#footfall-9 .cls-3{fill:#5a5a5a;}#footfall-9 .cls-4{fill:#fff;}</style></defs>
+	<rect class="cls-1" width="70" height="40"/><rect width="70" height="5"/><rect y="35" width="70" height="5"/><circle class="cls-2" cx="35" cy="20" r="5.5"/><circle class="cls-3" cx="35" cy="20" r="5.5"/><rect class="cls-4" x="31.5" y="18.34" width="5.78" height="3.31" rx="0.4" ry="0.4"/><path class="cls-4" d="M37.24,20.42a.6.6,0,0,1,0-.85l.83-.82c.23-.23.42-.15.42.18v2.15c0,.33-.19.41-.42.17Z"/>
+	</symbol>
+</svg>
+	<header class="body-header">
+		<header>
+			<a href="football/match-list/zhongchao.html" class="return"><span class="icon-jiantou-left"></span></a>
+			<span>球会友谊 第1轮<br>比赛时间：2017年05月31日00:10</span>
+			<a href="##" id="header-menu"></a>
+		</header>
+		<section>
+			<div class="hs-left">
+				<div>
+					<span></span>
+					<p>山东鲁能泰山</p>
+				</div>
+			</div>
+			<div class="hs-middle">
+				<div>
+					<div class="state"><span>完场</span></div>
+					<div class="proportion">
+						<span>1</span>
+						<span>-</span>
+						<span>4</span>
+					</div>
+					<div class="proportion-min">(0-4)</div>
+					<div class="watch"><a><i class="play-icon icon-play"></i>观看直播</a></div>
+				</div>
+			</div>
+			<div class="hs-right">
+				<div>
+					<span></span>
+					<p>河南建业</p>
+				</div>
+			</div>
+		</section>
+	</header>
+	<nav>
+		<ul class="menuBox-b">
+			<li class="liactive-b">赛况</li>
+			<li>阵容</li>
+			<li>分析</li>
+			<li>赔率</li>
+		</ul>
+	</nav>
+	<section class="body-section contentBox-b">
+		<ul class="section-menu">
+			<li>
+				<div class="battlefield">战报</div>
+				<div class="video">
+					<a href="##"><svg><use xlink:href="#footfall-9"></use></svg></a>
+				</div>
+				<div class="zb-text">北京时间2017年5月12日，中超第2轮的一场比赛，由河南建业主场迎战辽宁沈阳开新。上半场，乌贾错伯单刀相会，陈灏门前垫射打偏。下半场，郎征接阿萨尼头球做球门前垫射门，小将胡靖航助攻戈麦斯推射空门闪电板板平比分。最终，河南建业主场1-1战平辽宁沈阳开新，获得联赛两连平。</div>
+				<div class="battlefield">事件</div>
+				<ul class="event">
+					<li>
+						<div class="event-left">
+							<i class="spot-top"></i>
+							<span class="sj-time">11</span>
+							<div class="dialog-box">
+								<div class="arrow"></div>
+								<div class="content">
+									<i class="sj-icon"><svg><use xlink:href="#footfall-8"></use></svg></i>
+									姜积弘
+								</div>
+								<div class="content">
+									<i class="sj-icon"><svg><use xlink:href="#footfall-4"></use></svg></i>
+									金泰延
+								</div>
+							</div>
+						</div>
+						<div class="event-right"></div>
+					</li>
+
+					<li>
+						<div class="event-left">
+							<span class="sj-time">14</span>
+						</div>
+						<div class="event-right">
+							<div class="dialog-box">
+								<div class="arrow"></div>
+								<div class="content">
+									<i class="sj-icon"><svg><use xlink:href="#footfall-5"></use></svg></i>
+									扎哈维
+								</div>
+							</div>
+						</div>
+					</li>
+
+					<li>
+						<div class="event-left">
+							<span class="sj-time">25</span>
+							<div class="dialog-box">
+								<div class="arrow"></div>
+								<div class="content">
+									<i class="sj-icon"><svg><use xlink:href="#footfall-2"></use></svg></i>
+									宋博轩
+								</div>
+								<div class="content">
+									<i class="sj-icon"><svg><use xlink:href="#footfall-4"></use></svg></i>
+									唐诗(U23)
+								</div>
+							</div>
+						</div>
+						<div class="event-right"></div>
+					</li>
+
+					<li>
+						<div class="event-left">
+							<span class="sj-time">42</span>
+						</div>
+						<div class="event-right">
+							<div class="dialog-box">
+								<div class="arrow"></div>
+								<div class="content">
+									<i class="sj-icon"><svg><use xlink:href="#footfall-1"></use></svg></i>
+									陈志钊
+								</div>
+								<div class="content">
+									<i class="sj-icon"><svg><use xlink:href="#footfall-3"></use></svg></i>
+									戈腾
+								</div>
+							</div>
+						</div>
+					</li>
+
+					<li>
+						<div class="event-left">
+							<span class="sj-time">59</span>
+						</div>
+						<div class="event-right">
+							<div class="dialog-box">
+								<div class="arrow"></div>
+								<div class="content">
+									<i class="sj-icon"><svg><use xlink:href="#footfall-5"></use></svg></i>
+									扎哈维
+								</div>
+								<div class="content">
+									<i class="sj-icon"><svg><use xlink:href="#footfall-6"></use></svg></i>
+									陈志钊
+								</div>
+							</div>
+						</div>
+					</li>
+
+					<li>
+						<div class="event-left">
+							<span class="sj-time">71</span>
+						</div>
+						<div class="event-right">
+							<div class="dialog-box">
+								<div class="arrow"></div>
+								<div class="content">
+									<i class="sj-icon"><svg><use xlink:href="#footfall-7"></use></svg></i>
+									肖智
+								</div>
+								<div class="content">
+									<i class="sj-icon"><svg><use xlink:href="#footfall-8"></use></svg></i>
+									雷纳迪尼奥
+								</div>
+							</div>
+						</div>
+					</li>
+
+					<li>
+						<div class="event-left">
+							<span class="sj-time">81</span>
+							<div class="dialog-box">
+								<div class="arrow"></div>
+								<div class="content">
+									<i class="sj-icon"><svg><use xlink:href="#footfall-2"></use></svg></i>
+									张池明
+								</div>
+								<div class="content">
+									<i class="sj-icon"><svg><use xlink:href="#footfall-3"></use></svg></i>
+									吕鹏
+								</div>
+								<div class="content">
+									<i class="sj-icon"><svg><use xlink:href="#footfall-4"></use></svg></i>
+									克里梅茨
+								</div>
+								<div class="content">
+									<i class="sj-icon"><svg><use xlink:href="#footfall-6"></use></svg></i>
+									李翰博
+								</div>
+							</div>
+						</div>
+						<div class="event-right"></div>
+					</li>
+
+					<li>
+						<div class="event-left">
+							<i class="spot-lower"></i>
+							<span class="sj-time">94</span>
+							<div class="dialog-box">
+								<div class="arrow"></div>
+								<div class="content">
+									<i class="sj-icon"><svg><use xlink:href="#footfall-1"></use></svg></i>
+									张池明
+								</div>
+								<div class="content">
+									<i class="sj-icon"><svg><use xlink:href="#footfall-7"></use></svg></i>
+									李磊
+								</div>
+							</div>
+						</div>
+						<div class="event-right">
+						</div>
+					</li>
+				</ul>
+				<ul class="tag">
+					<li><i class="tag-icon"><svg><use xlink:href="#footfall-1"></use></svg></i>&nbsp;进球</li>
+					<li><i class="tag-icon"><svg><use xlink:href="#footfall-3"></use></svg></i>&nbsp;点球</li>
+					<li><i class="tag-icon"><svg><use xlink:href="#footfall-2"></use></svg></i>&nbsp;点球未进</li>
+					<li><i class="tag-icon"><svg><use xlink:href="#footfall-8"></use></svg></i>&nbsp;乌龙球</li>
+					<li><i class="tag-icon"><svg><use xlink:href="#footfall-7"></use></svg></i>&nbsp;助攻</li>
+				</ul>
+				<div class="battlefield">技术统计</div>
+				<ul class="statistics-head">
+					<li>山东鲁能泰山<i><img src="imgage/zhongchao/shenghua.jpeg" alt=""></i></li>
+					<li><i><img src="imgage/zhongchao/jianye.png" alt=""></i>河南建业</li>
+				</ul>
+				<div class="statistics-main">
+					<table class="form-statistics">
+						<tr>
+							<td>56</td>
+							<td><div class="bar-green" style="width: 16%"></div></td>
+							<td>控球率</td>
+							<td><div style="width: 44%"></div></td>
+							<td>44</td>
+						</tr>
+						<tr>
+							<td>11</td>
+							<td><div class="bar-green" style="width: 11%"></div></td>
+							<td>射门</td>
+							<td><div style="width: 6%"></div></td>
+							<td>6</td>
+						</tr>
+						<tr>
+							<td>8</td>
+							<td><div class="bar-green" style="width: 8%"></div></td>
+							<td>射正</td>
+							<td><div style="width: 3%"></div></td>
+							<td>3</td>
+						</tr>
+						<tr>
+							<td>2</td>
+							<td><div class="bar-green" style="width: 2%"></div></td>
+							<td>封堵</td>
+							<td><div style="width: 1%"></div></td>
+							<td>1</td>
+						</tr>
+						<tr>
+							<td>13</td>
+							<td><div class="bar-green" style="width: 13%"></div></td>
+							<td>任意球</td>
+							<td><div style="width: 19%"></div></td>
+							<td>19</td>
+						</tr>
+						<tr>
+							<td>5</td>
+							<td><div class="bar-green" style="width: 5%"></div></td>
+							<td>角球</td>
+							<td><div style="width: 2%"></div></td>
+							<td>2</td>
+						</tr>
+						<tr>
+							<td>0</td>
+							<td><div class="bar-green" style="width: 0%"></div></td>
+							<td>越位</td>
+							<td><div style="width: 4%"></div></td>
+							<td>4</td>
+						</tr>
+						<tr>
+							<td>3</td>
+							<td><div class="bar-green" style="width: 3%"></div></td>
+							<td>换人</td>
+							<td><div style="width: 3%"></div></td>
+							<td>3</td>
+						</tr>
+						<tr>
+							<td>19</td>
+							<td><div class="bar-green" style="width: 19%"></div></td>
+							<td>犯规</td>
+							<td><div style="width: 9%"></div></td>
+							<td>9</td>
+						</tr>
+						<tr>
+							<td>4</td>
+							<td><div class="bar-green" style="width: 4%"></div></td>
+							<td>黄牌</td>
+							<td><div style="width: 1%"></div></td>
+							<td>1</td>
+						</tr>
+					</table>
+				</div>
+				<div class="battlefield">相关新闻</div>
+				<ul class="news">
+					<li>
+						<a href="##">
+							<div class="thumbnail">
+								<img src="imgage/thumbnail/thumbnail-1.jpg" alt="">
+							</div>
+							<div class="news-title">水塔变水神，这一刻鲁能球迷久违了<span>89阅读</span></div>
+						</a>
+					</li>
+					<li>
+						<a href="##">
+							<div class="thumbnail">
+								<img src="imgage/thumbnail/thumbnail-2.jpg" alt="">
+							</div>
+							<div class="news-title">布置战术，马加特拽料翻译衣服<span>511阅读</span></div>
+						</a>
+					</li>
+					<li>
+						<a href="##">
+							<div class="thumbnail">
+								<img src="imgage/thumbnail/thumbnail-3.jpg" alt="">
+							</div>
+							<div class="news-title">中超预备队第11轮综述：恒大3-4力帆，延边获首胜<span>108阅读</span></div>
+						</a>
+					</li>
+					<li>
+						<a href="##">
+							<div class="thumbnail">
+								<img src="imgage/thumbnail/thumbnail-4.jpg" alt="">
+							</div>
+							<div class="news-title">早报：再见，青春，永远的故乡<span>223阅读</span></div>
+						</a>
+					</li>
+					<li>
+						<a href="##">
+							<div class="thumbnail">
+								<img src="imgage/thumbnail/thumbnail-5.jpg" alt="">
+							</div>
+							<div class="news-title">郑铮：胜利缓解了球队的压力<span>272阅读</span></div>
+						</a>
+					</li>
+					<li>
+						<a href="##">
+							<div class="thumbnail">
+								<img src="imgage/thumbnail/thumbnail-6.jpg" alt="">
+							</div>
+							<div class="news-title">神似！塔尔德利禁区原地摆腿巧射打入绝杀！这一刻小罗附体<span>88阅读</span></div>
+						</a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<div class="lineup-chart">
+					<div class="chart-top">
+						<div></div>
+						<table class="form-chart-top">
+							<tr>
+								<td colspan="4"><span>25</span>王大雷</td>
+							</tr>
+							<tr>
+								<td><span>2</span>李松益</td>
+								<td><span>35</span>戴琳</td>
+								<td><span>4</span>吉尔</td>
+								<td><span>5</span>郑铮</td>
+							</tr>
+							<tr>
+								<td colspan="4"></td>
+							</tr>
+							<tr>
+								<td><span>6</span>王彤</td>
+								<td><span>26</span>崔巍(U23)</td>
+								<td><span>22</span>蒿俊闵</td>
+								<td><span>17</span>吴兴涵</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td><span>9</span>塔尔德利</td>
+								<td><span>18</span>帕皮斯-西塞</td>
+								<td></td>
+							</tr>
+						</table>
+					</div>
+					<div class="chart-middle"></div>
+					<div class="chart-lower">
+						<div></div>
+						<table class="form-chart-lower">
+							<tr>
+								<td></td>
+								<td><span>9</span>塔尔德利</td>
+								<td><span>18</span>帕皮斯-西塞</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td><span>26</span>崔巍(U23)</td>
+								<td><span>22</span>蒿俊闵</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td><span>6</span>王彤</td>
+								<td></td>
+								<td></td>
+								<td><span>17</span>吴兴涵</td>
+							</tr>
+							<tr>
+								<td><span>2</span>李松益</td>
+								<td><span>35</span>戴琳</td>
+								<td><span>4</span>吉尔</td>
+								<td><span>5</span>郑铮</td>
+							</tr>
+							<tr>
+								<td colspan="4"><span>25</span>王大雷</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<div class="battlefield">战报</div>
+				<table class="alternate">
+					<tr>
+						<td><span></span>山东鲁能泰山</td>
+						<td><span></span>河南建业</td>
+					</tr>
+					<tr>
+						<td><span>1</span>刘震理</td>
+						<td><span>12</span>王国明</td>
+					</tr>
+					<tr>
+						<td><span>21</span>刘彬彬</td>
+						<td><span>29</span>杜长杰(U23)</td>
+					</tr>
+					<tr>
+						<td><span>3</span>刘军帅(U23)</td>
+						<td><span>19</span>张可</td>
+					</tr>
+					<tr>
+						<td><span>33</span>金敬道</td>
+						<td><span>39</span>陈子介</td>
+					</tr>
+					<tr>
+						<td><span>13</span>张池</td>
+						<td><span>22</span>龙威(U23)</td>
+					</tr>
+					<tr>
+						<td><span>29</span>成源</td>
+						<td><span>27</span>路尧</td>
+					</tr>
+					<tr>
+						<td><span>24</span>齐天羽</td>
+						<td><span>24</span>刘恒(U23)</td>
+					</tr>
+				</table>
+			</li>
+			<li>
+				<div class="battlefield">猜胜负(34845人参与)</div>
+				<ul class="vote">
+					<li>
+						<div class="master">80%<div>支持</div></div>
+						<div class="master-b"><span></span>主胜</div>
+					</li>
+					<li>
+						<div class="tie">2%<div>支持</div></div>
+						<div>平局</div>
+					</li>
+					<li>
+						<div class="guest">18%<div>支持</div></div>
+						<div class="guest-b"><span></span>主胜</div>
+					</li>
+				</ul>
+				<div class="battlefield">对赛往绩</div>
+				<div class="record">
+					<ul class="record-a">
+						<li>山东鲁能泰山</li>
+						<li>最近5场交锋</li>
+						<li>河南建业</li>
+					</ul>
+					<ul class="record-b">
+						<li>2胜</li>
+						<li>1平</li>
+						<li>2胜</li>
+					</ul>
+					<table class="form-record">
+						<tr>
+							<th>日期</th><th>赛事</th><th>主队</th><th>比分</th><th>客队</th>
+						</tr>
+						<tr>
+							<td>09-18<br>2016</td>
+							<td>中超</td>
+							<td>河南建业</td>
+							<td><span class="b-young">2-1</span></td>
+							<td class="c-red">山东鲁能泰山</td>
+						</tr>
+						<tr>
+							<td>05-21<br>2016</td>
+							<td>中超</td>
+							<td class="c-green">山东鲁能泰山</td>
+							<td><span class="b-green">0-0</span></td>
+							<td>河南建业</td>
+						</tr>
+						<tr>
+							<td>08-22<br>2015</td>
+							<td>中超</td>
+							<td>河南建业</td>
+							<td><span class="b-young">1-0</span></td>
+							<td class="c-red">山东鲁能泰山</td>
+						</tr>
+						<tr>
+							<td>08-19<br>2015</td>
+							<td>足协杯</td>
+							<td>河南建业</td>
+							<td><span class="b-red">2-4</span></td>
+							<td class="c-red">山东鲁能泰山</td>
+						</tr>
+						<tr>
+							<td>05-10<br>2015</td>
+							<td>中超</td>
+							<td class="c-red">山东鲁能泰山</td>
+							<td><span class="b-red">2-1</span></td>
+							<td>河南建业</td>
+						</tr>
+					</table>
+				</div>
+				<div class="battlefield">联赛积分榜</div>
+				<div class="integral">
+					<div class="integral-a">
+						<span></span>山东鲁能泰山
+					</div>
+					<table class="form-integral">
+						<tr>
+							<th>全场</th>
+							<th>赛</th>
+							<th>胜</th>
+							<th>平</th>
+							<th>负</th>
+							<th>得</th>
+							<th>失</th>
+							<th>积分</th>
+							<th>排名</th>
+							<th>胜率</th>
+						</tr>
+						<tr>
+							<td>总</td>
+							<td>10</td>
+							<td>6</td>
+							<td>2</td>
+							<td>2</td>
+							<td>17</td>
+							<td>9</td>
+							<td>20</td>
+							<td>4</td>
+							<td>60%</td>
+						</tr>
+						<tr>
+							<td>主</td>
+							<td>6</td>
+							<td>5</td>
+							<td>1</td>
+							<td>0</td>
+							<td>12</td>
+							<td>4</td>
+							<td>16</td>
+							<td>3</td>
+							<td>84%</td>
+						</tr>
+						<tr>
+							<td>客</td>
+							<td>4</td>
+							<td>1</td>
+							<td>1</td>
+							<td>2</td>
+							<td>5</td>
+							<td>5</td>
+							<td>4</td>
+							<td>10</td>
+							<td>25%</td>
+						</tr>
+					</table>
+					<div class="integral-a jianye-icon">
+						<span></span>河南建业
+					</div>
+					<table class="form-integral">
+						<tr>
+							<th>全场</th>
+							<th>赛</th>
+							<th>胜</th>
+							<th>平</th>
+							<th>负</th>
+							<th>得</th>
+							<th>失</th>
+							<th>积分</th>
+							<th>排名</th>
+							<th>胜率</th>
+						</tr>
+						<tr>
+							<td>总</td>
+							<td>11</td>
+							<td>1</td>
+							<td>4</td>
+							<td>6</td>
+							<td>9</td>
+							<td>15</td>
+							<td>7</td>
+							<td>15</td>
+							<td>10%</td>
+						</tr>
+						<tr>
+							<td>主</td>
+							<td>6</td>
+							<td>0</td>
+							<td>4</td>
+							<td>2</td>
+							<td>4</td>
+							<td>7</td>
+							<td>4</td>
+							<td>16</td>
+							<td>0%</td>
+						</tr>
+						<tr>
+							<td>客</td>
+							<td>5</td>
+							<td>1</td>
+							<td>0</td>
+							<td>4</td>
+							<td>5</td>
+							<td>8</td>
+							<td>3</td>
+							<td>15</td>
+							<td>20%</td>
+						</tr>
+					</table>
+				</div>
+				<div class="battlefield">近期战绩</div>
+				<div class="record">
+					<div class="integral-a">
+						<span></span>山东鲁能泰山
+					</div>
+					<table class="form-record">
+						<tr>
+							<th>日期</th><th>赛事</th><th>主队</th><th>比分</th><th>客队</th>
+						</tr>
+						<tr>
+							<td>09-18<br>2016</td>
+							<td>中超</td>
+							<td>延边富德</td>
+							<td><span class="b-green">1-1</span></td>
+							<td class="c-green">山东鲁能泰山</td>
+						</tr>
+						<tr>
+							<td>05-21<br>2016</td>
+							<td>中超</td>
+							<td>江苏苏宁易购</td>
+							<td><span class="b-young">2-1</span></td>
+							<td class="c-red">山东鲁能泰山</td>
+						</tr>
+						<tr>
+							<td>08-22<br>2015</td>
+							<td>中超</td>
+							<td class="c-red">山东鲁能泰山</td>
+							<td><span class="b-red">3-0</span></td>
+							<td>广州富力</td>
+						</tr>
+						<tr>
+							<td>08-19<br>2015</td>
+							<td>足协杯</td>
+							<td>吉林长春百嘉</td>
+							<td><span class="b-red">1-4</span></td>
+							<td class="c-red">山东鲁能泰山</td>
+						</tr>
+						<tr>
+							<td>05-10<br>2015</td>
+							<td>中超</td>
+							<td class="c-green">山东鲁能泰山</td>
+							<td><span class="b-green">1-1</span></td>
+							<td>重庆当代力帆</td>
+						</tr>
+					</table>
+					<div class="integral-a jianye-icon">
+						<span></span>河南建业
+					</div>
+					<table class="form-record">
+						<tr>
+							<th>日期</th><th>赛事</th><th>主队</th><th>比分</th><th>客队</th>
+						</tr>
+						<tr>
+							<td>05-21<br>2017</td>
+							<td>中超</td>
+							<td class="c-red">河南建业</td>
+							<td><span class="b-young">0-1</span></td>
+							<td>贵州恒丰智诚</td>
+						</tr>
+						<tr>
+							<td>05-13<br>2017</td>
+							<td>中超</td>
+							<td class="c-green">河南建业</td>
+							<td><span class="b-green">0-0</span></td>
+							<td>上海绿地申花</td>
+						</tr>
+						<tr>
+							<td>05-06<br>2017</td>
+							<td>中超</td>
+							<td>重庆当代力帆</td>
+							<td><span class="b-red">2-3</span></td>
+							<td class="c-red">河南建业</td>
+						</tr>
+						<tr>
+							<td>05-03<br>2017</td>
+							<td>足协杯</td>
+							<td>上海申梵</td>
+							<td><span class="b-red">1-5</span></td>
+							<td class="c-red">河南建业</td>
+						</tr>
+						<tr>
+							<td>04-29<br>2017</td>
+							<td>中超</td>
+							<td class="c-red">河南建业</td>
+							<td><span class="b-young">2-4</span></td>
+							<td>广州恒大淘宝</td>
+						</tr>
+					</table>
+				</div>
+			</li>
+			<li>
+				<ul class="odds-nav">
+					<li class="odds-subnav">亚盘</li>
+					<li>大小球</li>
+					<li>欧赔</li>
+				</ul>
+				<table class="odds-form">
+					<tr>
+						<th>公司</th><th>类型</th><th>主赔</th><th>让球</th><th>客赔</th><th>变化时间</th>
+					</tr>
+					<tr>
+						<td rowspan="2">ManbetX</td>
+						<td class="c-red">即时</td>
+						<td>0.97</td>
+						<td>0.75</td>
+						<td>0.88</td>
+						<td rowspan="2">05-28 19:24</td>
+					</tr>
+					<tr>
+						<td>初盘</td>
+						<td>1.04</td>
+						<td>1.25</td>
+						<td>0.82</td>
+					</tr>
+
+					<tr>
+						<td rowspan="2">澳彩</td>
+						<td class="c-red">即时</td>
+						<td>0.9</td>
+						<td>0.75</td>
+						<td>0.8</td>
+						<td rowspan="2">05-28 19:09</td>
+					</tr>
+					<tr>
+						<td>初盘</td>
+						<td>0.94</td>
+						<td>1</td>
+						<td>0.76</td>
+					</tr>
+
+					<tr>
+						<td rowspan="2">Bet365</td>
+						<td class="c-red">即时</td>
+						<td>0.9</td>
+						<td>0.75</td>
+						<td>0.9</td>
+						<td rowspan="2">05-28 19:17</td>
+					</tr>
+					<tr>
+						<td>初盘</td>
+						<td>1.25</td>
+						<td>1.25</td>
+						<td>0.62</td>
+					</tr>
+
+					<tr>
+						<td rowspan="2">明升</td>
+						<td class="c-red">即时</td>
+						<td>0.97</td>
+						<td>0.75</td>
+						<td>0.91</td>
+						<td rowspan="2">05-28 19:31</td>
+					</tr>
+					<tr>
+						<td>初盘</td>
+						<td>1.04</td>
+						<td>1.25</td>
+						<td>0.8</td>
+					</tr>
+
+					<tr>
+						<td rowspan="2">利记</td>
+						<td class="c-red">即时</td>
+						<td>0.99</td>
+						<td>0.75</td>
+						<td>0.89</td>
+						<td rowspan="2">05-28 19:29</td>
+					</tr>
+					<tr>
+						<td>初盘</td>
+						<td>0.89</td>
+						<td>1</td>
+						<td>0.95</td>
+					</tr>
+
+					<tr>
+						<td rowspan="2">金宝博</td>
+						<td class="c-red">即时</td>
+						<td>1.01</td>
+						<td>0.75</td>
+						<td>0.87</td>
+						<td rowspan="2">05-28 19:29</td>
+					</tr>
+					<tr>
+						<td>初盘</td>
+						<td>0.96</td>
+						<td>1.25</td>
+						<td>0.88</td>
+					</tr>
+
+					<tr>
+						<td rowspan="2">大发</td>
+						<td class="c-red">即时</td>
+						<td>1.01</td>
+						<td>0.75</td>
+						<td>0.87</td>
+						<td rowspan="2">05-28 19:29</td>
+					</tr>
+					<tr>
+						<td>初盘</td>
+						<td>0.96</td>
+						<td>1.25</td>
+						<td>0.88</td>
+					</tr>
+
+					<tr>
+						<td rowspan="2">易胜博</td>
+						<td class="c-red">即时</td>
+						<td>0.73</td>
+						<td>0.5</td>
+						<td>1.17</td>
+						<td rowspan="2">05-28 19:11</td>
+					</tr>
+					<tr>
+						<td>初盘</td>
+						<td>0.98</td>
+						<td>1</td>
+						<td>0.93</td>
+					</tr>
+
+					<tr>
+						<td rowspan="2">10Bet</td>
+						<td class="c-red">即时</td>
+						<td>1</td>
+						<td>0.75</td>
+						<td>0.9</td>
+						<td rowspan="2">05-28 19:29</td>
+					</tr>
+					<tr>
+						<td>初盘</td>
+						<td>1.06</td>
+						<td>1.25</td>
+						<td>0.81</td>
+					</tr>
+
+					<tr>
+						<td rowspan="2">S2</td>
+						<td class="c-red">即时</td>
+						<td>1.01</td>
+						<td>0.75</td>
+						<td>0.87</td>
+						<td rowspan="2">05-28 19:26</td>
+					</tr>
+					<tr>
+						<td>初盘</td>
+						<td>0.96</td>
+						<td>1.25</td>
+						<td>0.88</td>
+					</tr>
+				</table>
+				<table class="odds-form">
+					<tr>
+						<th>公司</th><th>类型</th><th>大球</th><th>盘品</th><th>小球</th><th>变化时间</th>
+					</tr>
+					<tr>
+						<td rowspan="2">ManbetX</td>
+						<td class="c-red">即时</td>
+						<td>1</td>
+						<td>2.5</td>
+						<td>0.75</td>
+						<td rowspan="2">05-28 19:11</td>
+					</tr>
+					<tr>
+						<td>初盘</td>
+						<td>0.93</td>
+						<td>2.5</td>
+						<td>0.8</td>
+					</tr>
+
+					<tr>
+						<td rowspan="2">澳彩</td>
+						<td class="c-red">即时</td>
+						<td>0.85</td>
+						<td>2.5</td>
+						<td>0.75</td>
+						<td rowspan="2">05-28 19:09</td>
+					</tr>
+					<tr>
+						<td>初盘</td>
+						<td>0.9</td>
+						<td>2.5</td>
+						<td>0.7</td>
+					</tr>
+
+					<tr>
+						<td rowspan="2">Bet365</td>
+						<td class="c-red">即时</td>
+						<td>0.9</td>
+						<td>0.75</td>
+						<td>0.9</td>
+						<td rowspan="2">05-28 19:08</td>
+					</tr>
+					<tr>
+						<td>初盘</td>
+						<td>1.02</td>
+						<td>2.5</td>
+						<td>0.75</td>
+					</tr>
+
+					<tr>
+						<td rowspan="2">明升</td>
+						<td class="c-red">即时</td>
+						<td>0.84</td>
+						<td>2.25</td>
+						<td>1.02</td>
+						<td rowspan="2">05-28 19:27</td>
+					</tr>
+					<tr>
+						<td>初盘</td>
+						<td>0.88</td>
+						<td>2.5</td>
+						<td>0.94</td>
+					</tr>
+
+					<tr>
+						<td rowspan="2">利记</td>
+						<td class="c-red">即时</td>
+						<td>1</td>
+						<td>2.5</td>
+						<td>0.86</td>
+						<td rowspan="2">05-28 19:29</td>
+					</tr>
+					<tr>
+						<td>初盘</td>
+						<td>0.87</td>
+						<td>2.5</td>
+						<td>0.95</td>
+					</tr>
+
+					<tr>
+						<td rowspan="2">金宝博</td>
+						<td class="c-red">即时</td>
+						<td>0.85</td>
+						<td>2.25</td>
+						<td>1.01</td>
+						<td rowspan="2">05-28 19:13</td>
+					</tr>
+					<tr>
+						<td>初盘</td>
+						<td>0.81</td>
+						<td>2.5</td>
+						<td>1.01</td>
+					</tr>
+
+					<tr>
+						<td rowspan="2">大发</td>
+						<td class="c-red">即时</td>
+						<td>0.84</td>
+						<td>2.25</td>
+						<td>1.02</td>
+						<td rowspan="2">05-28 19:26</td>
+					</tr>
+					<tr>
+						<td>初盘</td>
+						<td>0.88</td>
+						<td>2.5</td>
+						<td>0.94</td>
+					</tr>
+
+					<tr>
+						<td rowspan="2">易胜博</td>
+						<td class="c-red">即时</td>
+						<td>1.04</td>
+						<td>2.5</td>
+						<td>0.8</td>
+						<td rowspan="2">05-28 19:08</td>
+					</tr>
+					<tr>
+						<td>初盘</td>
+						<td>1.04</td>
+						<td>2.5</td>
+						<td>0.8</td>
+					</tr>
+
+					<tr>
+						<td rowspan="2">10Bet</td>
+						<td class="c-red">即时</td>
+						<td>0.84</td>
+						<td>2.25</td>
+						<td>1.03</td>
+						<td rowspan="2">05-28 19:29</td>
+					</tr>
+					<tr>
+						<td>初盘</td>
+						<td>0.87</td>
+						<td>2.5</td>
+						<td>0.94</td>
+					</tr>
+
+					<tr>
+						<td rowspan="2">S2</td>
+						<td class="c-red">即时</td>
+						<td>0.86</td>
+						<td>2.25</td>
+						<td>1</td>
+						<td rowspan="2">05-28 19:16</td>
+					</tr>
+					<tr>
+						<td>初盘</td>
+						<td>0.81</td>
+						<td>2.5</td>
+						<td>1.01</td>
+					</tr>
+				</table>
+				<table class="odds-form">
+					<tr>
+						<th>公司</th><th>类型</th><th>主胜</th><th>平</th><th>客胜</th><th>变化时间</th>
+					</tr>
+					<tr>
+						<td rowspan="2">最高值</td>
+						<td class="c-red">即时</td>
+						<td>1.76</td>
+						<td>4.45</td>
+						<td>8</td>
+						<td rowspan="2">06-05 13:44</td>
+					</tr>
+					<tr>
+						<td>初盘</td>
+						<td>1.53</td>
+						<td>4.45</td>
+						<td>8</td>
+					</tr>
+
+					<tr>
+						<td rowspan="2">最低值</td>
+						<td class="c-red">即时</td>
+						<td>1.23</td>
+						<td>3.1</td>
+						<td>3.2</td>
+						<td rowspan="2">06-05 13:44</td>
+					</tr>
+					<tr>
+						<td>初盘</td>
+						<td>1.33</td>
+						<td>3.5</td>
+						<td>4.8</td>
+					</tr>
+
+					<tr>
+						<td rowspan="2">平均值</td>
+						<td class="c-red">即时</td>
+						<td>1.55</td>
+						<td>3.79</td>
+						<td>5.70</td>
+						<td rowspan="2">06-05 13:44</td>
+					</tr>
+					<tr>
+						<td>初盘</td>
+						<td>1.44</td>
+						<td>3.92</td>
+						<td>6.33</td>
+					</tr>
+
+					<tr>
+						<td rowspan="2">立博</td>
+						<td class="c-red">即时</td>
+						<td>1.7</td>
+						<td>3.4</td>
+						<td>4.75</td>
+						<td rowspan="2">05-28 19:23</td>
+					</tr>
+					<tr>
+						<td>初盘</td>
+						<td>1.4</td>
+						<td>4</td>
+						<td>7.5</td>
+					</tr>
+
+					<tr>
+						<td rowspan="2">ManbetX</td>
+						<td class="c-red">即时</td>
+						<td>1.57</td>
+						<td>3.75</td>
+						<td>5.25</td>
+						<td rowspan="2">05-28 19:23</td>
+					</tr>
+					<tr>
+						<td>初盘</td>
+						<td>1.4</td>
+						<td>4.33</td>
+						<td>8</td>
+					</tr>
+
+					<tr>
+						<td rowspan="2">Bet365</td>
+						<td class="c-red">即时</td>
+						<td>1.66</td>
+						<td>3.6</td>
+						<td>5.25</td>
+						<td rowspan="2">05-28 18:58</td>
+					</tr>
+					<tr>
+						<td>初盘</td>
+						<td>1.44</td>
+						<td>4.4</td>
+						<td>7</td>
+					</tr>
+
+					<tr>
+						<td rowspan="2">bwin</td>
+						<td class="c-red">即时</td>
+						<td>1.53</td>
+						<td>3.75</td>
+						<td>5.25</td>
+						<td rowspan="2">05-28 15:08</td>
+					</tr>
+					<tr>
+						<td>初盘</td>
+						<td>1.35</td>
+						<td>4.25</td>
+						<td>7.25</td>
+					</tr>
+
+					<tr>
+						<td rowspan="2">金宝博</td>
+						<td class="c-red">即时</td>
+						<td>1.75</td>
+						<td>3.5</td>
+						<td>5.1</td>
+						<td rowspan="2">05-28 19:28</td>
+					</tr>
+					<tr>
+						<td>初盘</td>
+						<td>1.37</td>
+						<td>4.3</td>
+						<td>6.3</td>
+					</tr>
+
+					<tr>
+						<td rowspan="2">利记</td>
+						<td class="c-red">即时</td>
+						<td>1.73</td>
+						<td>3.5</td>
+						<td>3.9</td>
+						<td rowspan="2">05-28 19:28</td>
+					</tr>
+					<tr>
+						<td>初盘</td>
+						<td>1.5</td>
+						<td>3.9</td>
+						<td>5.2</td>
+					</tr>
+
+					<tr>
+						<td rowspan="2">Betfair</td>
+						<td class="c-red">即时</td>
+						<td>1.69</td>
+						<td>3.8</td>
+						<td>6.2</td>
+						<td rowspan="2">05-28 15:08</td>
+					</tr>
+					<tr>
+						<td>初盘</td>
+						<td>1.33</td>
+						<td>3.7</td>
+						<td>5.8</td>
+					</tr>
+
+					<tr>
+						<td rowspan="2">Macauslot</td>
+						<td class="c-red">即时</td>
+						<td>1.62</td>
+						<td>3.5</td>
+						<td>3.7</td>
+						<td rowspan="2">05-28 19:13</td>
+					</tr>
+					<tr>
+						<td>初盘</td>
+						<td>1.45</td>
+						<td>3.6</td>
+						<td>4.8</td>
+					</tr>
+
+					<tr>
+						<td rowspan="2">Coral</td>
+						<td class="c-red">即时</td>
+						<td>1.6</td>
+						<td>3.5</td>
+						<td>5.25</td>
+						<td rowspan="2">05-27 10:16</td>
+					</tr>
+					<tr>
+						<td>初盘</td>
+						<td>1.4</td>
+						<td>4</td>
+						<td>7.5</td>
+					</tr>
+
+					<tr>
+						<td rowspan="2">IBCBET</td>
+						<td class="c-red">即时</td>
+						<td>1.61</td>
+						<td>3.6</td>
+						<td>4.45</td>
+						<td rowspan="2">05-27 10:30</td>
+					</tr>
+					<tr>
+						<td>初盘</td>
+						<td>1.4</td>
+						<td>4.2</td>
+						<td>6.75</td>
+					</tr>
+
+					<tr>
+						<td rowspan="2">SNAI</td>
+						<td class="c-red">即时</td>
+						<td>1.6</td>
+						<td>3.6</td>
+						<td>5.25</td>
+						<td rowspan="2">05-26 19:30</td>
+					</tr>
+					<tr>
+						<td>初盘</td>
+						<td>1.4</td>
+						<td>4.2</td>
+						<td>6.75</td>
+					</tr>
+
+					<tr>
+						<td rowspan="2">10Bet</td>
+						<td class="c-red">即时</td>
+						<td>1.71</td>
+						<td>3.6</td>
+						<td>5</td>
+						<td rowspan="2">05-28 19:28</td>
+					</tr>
+					<tr>
+						<td>初盘</td>
+						<td>1.38</td>
+						<td>4.45</td>
+						<td>7</td>
+					</tr>
+
+					<tr>
+						<td rowspan="2">Centrebet</td>
+						<td class="c-red">即时</td>
+						<td>1.5</td>
+						<td>3.8</td>
+						<td>6.5</td>
+						<td rowspan="2">05-25 08:16</td>
+					</tr>
+					<tr>
+						<td>初盘</td>
+						<td>1.5</td>
+						<td>3.8</td>
+						<td>6.5</td>
+					</tr>
+				</table>
+			</li>
+		</ul>
+	</section>
+	</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

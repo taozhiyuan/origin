@@ -1,0 +1,449 @@
+@charset "UTF-8";
+*{box-sizing: border-box;}
+html,body{width: 100%; height: 100%;}
+body{color:#555;margin: 0; padding: 0; font-size: 14px; font-family: 'PingFangSC-Light','Hiragino Sans GB'; background-color: #f2f2f2;box-sizing: border-box;min-width: 700px;}
+p,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,select,textarea,blockquote{padding:0;margin:0;}
+ul,li,ol{list-style-type:none; outline: none;}
+table{width: 100%; border-collapse: collapse; border-spacing: 0;border: none;}
+table td{text-align: center;vertical-align: middle;}
+table th{text-align: center;vertical-align: middle;}
+img{border:0;}
+a {
+    cursor: pointer;
+    text-decoration: none;
+	outline: none;
+}
+input,select,textarea,button{outline: none;}
+textarea,fieldset,form{border: 0; margin: 0; padding: 0;}
+
+
+		div.print-toolbar{
+			width: 100%;
+			height: 40px;
+			border-top: 1px solid #ccc;
+			border-bottom: 1px solid #ccc;
+			background: #f2f2f2;
+			position: fixed;
+			top: 0;
+			left: 0;
+			z-index: 9;
+		}
+				a.print-bt{
+					display: block;
+					background-color: #5cb85c;
+					width: 60px;
+					height: 28px;
+					color: white;
+					border-radius: 3px;
+					text-align: center;
+					line-height: 28px;
+					font-size: 12px;
+					border: 1px solid #489b48;
+					margin-top: 5px;
+				}
+						a.print-bt i.icon-print{
+							font-size: 15px;
+							vertical-align: text-top;
+						}
+
+		div.print-title{
+			text-align: center;
+			font-weight: bolder;
+			font-size: 19px;
+			color: #0069bd;
+			box-sizing: border-box;
+			padding: 72px 25px 32px 25px;
+			position: relative;
+		}
+
+
+				div.print-title>span{
+					color: #AAA;
+					font-size: 14px;
+				}
+				div.form-state{
+					position: absolute;
+					top: 50px;
+					right: 10px;
+					font-size: 15px;
+					border: 1px solid #ccc;
+					border-radius: 10px;
+					height: 30px;
+					padding: 0 10px;
+					line-height: 30px;
+					color: #333;
+				}
+				aside.print-border{
+					position: absolute;
+					left: 10px;
+					top: 10px;
+					right: 10px;
+					bottom: 10px;
+					border: 1px dashed #5d9cec !important;
+					display: none;
+				}
+						aside.print-border>a.icon-chacha{
+							position: absolute;
+							top: 50%;
+							right: 15px;
+							margin-top: -8px;
+							color: #5d9cec;
+							font-size: 15px;
+						}
+
+
+
+
+		div.frame{
+			border: 1px solid #ccc;
+			box-sizing: border-box;
+			background-color: white;
+			margin-bottom: 15px;
+		}
+				div.print-type{
+					height: 50px;
+					line-height: 20px;
+					font-weight: bolder;
+					padding: 15px;
+					box-sizing: border-box;
+					font-size: 17px;
+					position: relative;
+				}
+				div.print-list{
+					height: 50px;
+					position: relative;
+				}
+						div.print-list>div{
+							width: 33.33%;
+							float: left;
+							height: 50px;
+							line-height: 20px;
+							border-top: 1px solid #ccc;
+							border-right: 1px solid #ccc;
+							box-sizing: border-box;
+							padding: 15px;
+						}
+						div.print-list>div:nth-child(3){
+							border-right: none;
+						}
+								div.print-list>div>span{
+									font-weight: bold;
+									color: #aaa;
+								}
+
+						div.print-list i.icon-touxiang{
+							font-size: 19px;
+							vertical-align: text-top;
+							color: #ccc;
+							margin: 0 3px;
+						}
+
+
+
+
+				div.print-purpose{
+					height: 50px;
+					position: relative;
+				}
+						div.print-purpose>div{
+							float: left;
+							height: 50px;
+							padding: 15px;
+							box-sizing: border-box;
+						}
+						div.print-purpose>div:first-child{
+							font-weight: bolder;
+							width: 10%;
+							border-right: 1px solid #ccc;
+						}
+						div.print-purpose>div:last-child{
+							width: 90%;
+						}
+
+		div.print-detailed{
+			position: relative;
+		}
+				div.print-detailed-title{
+					border-top: 1px solid #ccc;
+					padding: 15px;
+					font-weight: bold;
+				}
+						div.print-detailed a{
+							font-size: 17px;
+							vertical-align: text-bottom;
+							float: right;
+							line-height: 20px;
+							color: #aaa;
+							position: relative;
+							z-index: 99;
+						}
+						div.print-detailed a.icon-chuizi{
+							margin-right: 10px;
+						}
+
+		div.print-detailed-spread{
+			overflow: hidden;
+		}
+				div.spread-title{
+					height: 50px;
+					text-align: center;
+					border-top: 1px solid #ccc;
+					padding: 15px 0;
+					position: relative;
+				}
+				div.spread-title::after{
+					content: "";
+					width: 100%;
+					position: absolute;
+					left: 0;
+					top: 50%;
+					border-bottom: 1px dotted #ccc;
+					z-index: 0;
+				}
+						div.spread-title>span{
+							display: inline-block;
+							line-height: 15px;
+							padding: 0 15px;
+							background-color: white;
+							z-index: 2;
+							position: relative;
+						}
+				ul.item-name{
+					display: flex;
+					display: -webkit-flex;
+				}
+						ul.item-name li:first-child{
+							flex: 1;
+							-webkit-flex: 1;
+							height: 55px;
+							text-align: right;
+							line-height: 55px;
+							font-weight: bold;
+							border-bottom: 1px solid #f2f2f2;
+						}
+								ul.item-name li:first-child i{
+									color: red;
+								}
+						ul.item-name li:last-child{
+							flex: 4;
+							-webkit-flex: 4;
+							height: 55px;
+							line-height: 55px;
+							padding-left: 35px;
+							border-bottom: 1px solid #f2f2f2;
+						}
+
+
+				div.print-detailed-con{
+					overflow: hidden;
+					border-top: 1px solid #ccc;
+				}
+
+						table.form-detailed th{
+							height: 40px;
+							border-left: 1px solid #ccc;
+							background-color: #f2f2f2;
+						}
+								table.form-detailed th span{
+									color: red;
+								}
+						table.form-detailed th:first-child{
+							border-left: none;
+						}
+						table.form-detailed td{
+							height: 50px;
+							border-left: 1px solid #ccc;
+							border-top: 1px solid #ccc;
+						}
+						table.form-detailed td:first-child{
+							border-left: none;
+						}
+
+					div.print-input{
+						height: 50px;
+					}
+					div.print-input:hover{
+						background-color: #f2f2f2;
+					}
+							div.print-input>div{
+								float: left;
+								height: 50px;
+								width: 33.33%;
+								border-top: 1px solid #ccc;
+								border-bottom: 1px solid #ccc;
+								border-right: 1px solid #ccc;
+								box-sizing: border-box;
+								font-weight: bold;
+								padding: 15px;
+								line-height: 20px;
+							}
+							div.print-input>div:last-child{
+								border-right: none;
+							}
+
+							div.information{
+								height: 50px;
+								font-weight: bold;
+								position: relative;
+							}
+									div.information>div{
+										float: left;
+										height: 50px;
+										box-sizing: border-box;
+										border-top: 1px solid #ccc;
+									}
+									div.information>div:first-child{
+										width: 20%;
+										box-sizing: border-box;
+										text-align: center;
+										padding: 15px;
+									}
+									div.information>div:nth-child(2){
+										width: 80%;
+									}
+											div.information i.icon-wujiaoxin{
+												line-height: 48px;
+												font-size: 20px;
+												color: #aaa;
+											}
+
+
+/*弹窗*/
+div.popup-back{
+	background-color: rgba(0,0,0,0.3);
+	position: fixed;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 99;
+	display: none;
+}
+		div.popup{
+			width: 600px;
+			margin: 30px auto;
+			position: relative;
+			-webkit-transition: -webkit-transform .3s ease-out;
+			transition: transform .3s ease-out;
+		/*
+			-webkit-transform: translate3d(0,-25%,0) scale(0.7);
+			transform: translate3d(0,-25%,0) scale(0.7);
+		*/
+
+			-webkit-transform: translate3d(0,0,0) scale(1);
+			transform: translate3d(0,0,0) scale(1);
+		}
+				div.modal-content{
+					position: relative;
+					background-color: #fff;
+					-webkit-background-clip: padding-box;
+					background-clip: padding-box;
+					border: 1px solid #999;
+					border: 1px solid rgba(0,0,0,.2);
+					border-radius: 6px;
+					outline: 0;
+				/*
+					-webkit-box-shadow: 0 3px 9px rgba(0,0,0,.5);
+					box-shadow: 0 3px 9px rgba(0,0,0,.5);
+				*/
+
+					-webkit-box-shadow: 0 5px 15px rgba(0,0,0,.5);
+					box-shadow: 0 5px 15px rgba(0,0,0,.5);
+				}
+
+						div.modal-header {
+							min-height: 16px;
+							padding: 15px;
+							border-bottom: 1px solid #e5e5e5;
+						}
+						button.close {
+							-webkit-appearance: none;
+							padding: 0;
+							cursor: pointer;
+							background: transparent;
+							border: 0;
+							margin-top: -2px;
+							float: right;
+							font-size: 21px;
+							font-weight: bold;
+							line-height: 1;
+							color: #000;
+							text-shadow: 0 1px 0 #fff;
+							opacity: .2;
+						}
+
+						.modal-body {
+							position: relative;
+							padding: 15px;
+							max-height: 430px;
+							overflow-y: auto;
+						}
+								.pv-10{
+									padding-top: 10px!important;
+									padding-bottom: 10px!important;
+								}
+								.mb-15 {
+									margin-bottom: 15px!important;
+								}
+								.wform-column-list li {
+									margin: 0!important;
+									padding-left: 35px;
+									border-bottom: 1px dashed #ddd;
+								}
+								.radio, .checkbox {
+									position: relative;
+									display: block;
+									min-height: 20px;
+									margin-top: 10px;
+									margin-bottom: 10px;
+								}
+								.wform-column-list li label {
+									display: block;
+									padding: 10px 0;
+								}
+								.radio label, .checkbox label {
+									margin-bottom: 0;
+									font-weight: normal;
+									cursor: pointer;
+								}
+								.wform-column-list li label .sn {
+									margin-right: 4px;
+								}
+
+								.modal-footer {
+									padding: 15px;
+									height: 70px;
+									border-top: 1px solid #d5d5d5;
+								}
+								.btn-primary {
+									color: #fff;
+									background-color: #23b7e5;
+									border-color: #18aedb;
+									display: inline-block;
+									padding: 6px 12px;
+									margin-bottom: 0;
+									font-size: 14px;
+									font-weight: normal;
+									line-height: 1.42857143;
+									text-align: center;
+									white-space: nowrap;
+									vertical-align: middle;
+									border-radius: 4px;
+									margin-right: 10px!important;
+									float: right!important;
+								}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
